@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="ms">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadangan Kerjasama Strategik PMW & Koperasi Sahabat</title>
+    <title>PMW x Lee's Frozen Food Strategic Partnership 2025</title>
     <style>
         * {
             margin: 0;
@@ -11,150 +12,272 @@
         }
         
         body {
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 50%, #bbe1fa 100%);
             color: white;
-            line-height: 1.4;
-            min-height: 100vh;
-            padding: 8px;
-        }
-        
-        .container {
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        
-        .slide {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
-            padding: 18px;
-            margin-bottom: 25px;
-            border: 2px solid rgba(255,255,255,0.2);
-            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
-            position: relative;
-            page-break-inside: avoid;
-        }
-        
-        .slide-number {
-            position: absolute;
-            top: -10px;
-            right: 15px;
-            background: #ffd700;
-            color: #1e3c72;
-            padding: 5px 10px;
-            border-radius: 15px;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        
-        h1 {
-            font-size: 20px;
-            color: #ffd700;
-            text-align: center;
-            margin-bottom: 15px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-            line-height: 1.3;
-        }
-        
-        h2 {
-            font-size: 18px;
-            color: #ffd700;
-            margin-bottom: 12px;
-            text-align: center;
-            line-height: 1.3;
-        }
-        
-        h3 {
-            font-size: 15px;
-            color: #4CAF50;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        
-        h4 {
-            font-size: 14px;
-            color: #2196F3;
-            margin-bottom: 8px;
-            font-weight: bold;
-        }
-        
-        h5 {
-            font-size: 13px;
-            color: #FF9800;
-            margin-bottom: 6px;
-            font-weight: bold;
-        }
-        
-        p, li {
-            font-size: 12px;
             line-height: 1.5;
-            margin-bottom: 6px;
+            min-height: 100vh;
+            overflow-x: hidden;
         }
         
-        .highlight {
-            background: rgba(255,215,0,0.2);
-            padding: 12px;
-            border-radius: 10px;
-            border: 2px solid #ffd700;
-            text-align: center;
-            margin: 12px 0;
+        .header {
+            background: rgba(0,0,0,0.3);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
         }
         
-        .highlight .big-number {
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
             font-size: 24px;
             font-weight: bold;
             color: #ffd700;
-            display: block;
-            margin-bottom: 5px;
         }
         
-        .highlight .label {
-            font-size: 12px;
-            color: white;
-            line-height: 1.3;
+        .nav-info {
+            font-size: 14px;
+            color: #bbe1fa;
+        }
+        
+        .main-container {
+            margin-top: 80px;
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20px;
+        }
+        
+        .slide {
+            background: rgba(255,255,255,0.95);
+            color: #333;
+            margin-bottom: 40px;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255,255,255,0.3);
+            page-break-inside: avoid;
+        }
+        
+        .slide-header {
+            border-bottom: 4px solid #0f4c75;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .slide-number {
+            background: #ffd700;
+            color: #0f4c75;
+            padding: 8px 16px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            font-size: 32px;
+            color: #0f4c75;
+            text-align: center;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-size: 28px;
+            color: #0f4c75;
+            text-align: center;
+            margin-bottom: 25px;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-size: 22px;
+            color: #3282b8;
+            margin-bottom: 20px;
+            font-weight: 600;
+            border-left: 5px solid #3282b8;
+            padding-left: 15px;
+        }
+        
+        h4 {
+            font-size: 18px;
+            color: #0f4c75;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        p, li {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #0f4c75;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin: 25px 0;
+            box-shadow: 0 10px 20px rgba(255,215,0,0.3);
+        }
+        
+        .highlight-box .big-number {
+            font-size: 36px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        
+        .highlight-box .description {
+            font-size: 16px;
+            line-height: 1.4;
         }
         
         .stats-grid {
             display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .stats-grid-2 {
+            display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 8px;
-            margin: 12px 0;
+            gap: 20px;
+            margin: 25px 0;
         }
         
         .stats-grid-3 {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 6px;
-            margin: 12px 0;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
         }
         
         .stats-grid-4 {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 6px;
-            margin: 12px 0;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
         }
         
-        .stat-box {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            border-radius: 8px;
+        .stat-card {
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
+            box-shadow: 0 8px 15px rgba(15,76,117,0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
         }
         
         .stat-number {
-            font-size: 18px;
+            font-size: 24px;
             font-weight: bold;
-            color: #4CAF50;
-            margin-bottom: 3px;
+            color: #ffd700;
+            margin-bottom: 8px;
         }
         
         .stat-label {
-            font-size: 10px;
-            color: #ccc;
-            line-height: 1.2;
+            font-size: 12px;
+            line-height: 1.3;
+            opacity: 0.9;
+        }
+        
+        .content-box {
+            background: rgba(15,76,117,0.05);
+            padding: 25px;
+            border-radius: 12px;
+            margin: 20px 0;
+            border-left: 5px solid #3282b8;
+        }
+        
+        .partner-showcase {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+        
+        .partner-card {
+            background: linear-gradient(135deg, #3282b8 0%, #bbe1fa 100%);
+            color: #0f4c75;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(50,130,184,0.3);
+        }
+        
+        .partner-name {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #0f4c75;
+        }
+        
+        .table-container {
+            overflow-x: auto;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .data-table th {
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%);
+            color: white;
+            padding: 15px 10px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: center;
+        }
+        
+        .data-table td {
+            padding: 12px 10px;
+            text-align: center;
+            font-size: 13px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .data-table tr:nth-child(even) {
+            background: rgba(187,225,250,0.1);
+        }
+        
+        .data-table tr:hover {
+            background: rgba(255,215,0,0.1);
+        }
+        
+        .top-performer {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%) !important;
+            font-weight: bold;
+            color: #0f4c75 !important;
         }
         
         ul {
@@ -163,852 +286,793 @@
         }
         
         li {
-            padding-left: 18px;
+            padding-left: 25px;
             position: relative;
-            margin-bottom: 6px;
+            margin-bottom: 10px;
         }
         
         li:before {
             content: "✓";
             position: absolute;
             left: 0;
-            color: #4CAF50;
+            color: #3282b8;
             font-weight: bold;
-            font-size: 12px;
+            font-size: 16px;
         }
         
-        .partner-box {
-            background: rgba(255,255,255,0.15);
-            padding: 12px;
-            border-radius: 10px;
-            margin: 8px 0;
-            border: 2px solid #ffd700;
-        }
-        
-        .partner-name {
-            font-size: 14px;
-            font-weight: bold;
-            color: #ffd700;
-            text-align: center;
-            margin-bottom: 8px;
-        }
-        
-        .table-simple {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 12px 0;
-            font-size: 9px;
-        }
-        
-        .table-simple th,
-        .table-simple td {
-            padding: 4px 2px;
-            text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-        
-        .table-simple th {
-            background: rgba(255,215,0,0.3);
-            color: #1e3c72;
-            font-weight: bold;
-            font-size: 9px;
-        }
-        
-        .section-divider {
-            height: 3px;
-            background: linear-gradient(90deg, #ffd700, #4CAF50);
-            border-radius: 2px;
-            margin: 15px 0;
-        }
-        
-        .navigation {
-            position: fixed;
-            bottom: 15px;
-            right: 15px;
-            z-index: 1000;
-        }
-        
-        .nav-btn {
-            background: #ffd700;
-            color: #1e3c72;
-            border: none;
-            padding: 8px 12px;
-            border-radius: 20px;
-            font-weight: bold;
-            margin: 3px;
-            box-shadow: 0 4px 15px rgba(255,215,0,0.3);
-            font-size: 10px;
+        .timeline {
+            position: relative;
+            margin: 30px 0;
         }
         
         .timeline-item {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            border-radius: 8px;
-            margin: 6px 0;
-            border-left: 4px solid #ffd700;
+            background: rgba(50,130,184,0.1);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+            border-left: 5px solid #3282b8;
+            transition: all 0.3s ease;
+        }
+        
+        .timeline-item:hover {
+            background: rgba(50,130,184,0.2);
+            transform: translateX(10px);
         }
         
         .timeline-date {
             font-weight: bold;
-            color: #ffd700;
-            font-size: 12px;
+            color: #0f4c75;
+            font-size: 16px;
+            margin-bottom: 8px;
         }
         
         .timeline-desc {
-            font-size: 11px;
-            margin-top: 3px;
-            line-height: 1.3;
+            font-size: 14px;
+            color: #555;
+            line-height: 1.5;
         }
         
-        .detail-box {
-            background: rgba(255,255,255,0.1);
-            padding: 10px;
-            border-radius: 8px;
-            margin: 8px 0;
-            border: 1px solid rgba(255,255,255,0.3);
-        }
-        
-        .competitive-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 10px 0;
-            font-size: 8px;
-        }
-        
-        .competitive-table th,
-        .competitive-table td {
-            padding: 3px 2px;
+        .cta-section {
+            background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 20px;
             text-align: center;
-            border: 1px solid rgba(255,255,255,0.3);
+            margin: 40px 0;
+            box-shadow: 0 20px 40px rgba(15,76,117,0.3);
         }
         
-        .competitive-table th {
-            background: rgba(255,215,0,0.3);
-            color: #1e3c72;
+        .cta-title {
+            font-size: 28px;
             font-weight: bold;
+            color: #ffd700;
+            margin-bottom: 20px;
+        }
+        
+        .cta-subtitle {
+            font-size: 18px;
+            margin-bottom: 15px;
+            opacity: 0.9;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+        
+        .nav-btn {
+            background: linear-gradient(135deg, #ffd700 0%, #ffed4e 100%);
+            color: #0f4c75;
+            border: none;
+            padding: 12px 16px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 5px;
+            box-shadow: 0 5px 15px rgba(255,215,0,0.3);
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255,215,0,0.4);
+        }
+        
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 15px;
+                margin-top: 70px;
+            }
+            
+            .slide {
+                padding: 25px;
+                margin-bottom: 25px;
+            }
+            
+            h1 { font-size: 24px; }
+            h2 { font-size: 22px; }
+            h3 { font-size: 18px; }
+            
+            .stats-grid, .stats-grid-2 {
+                grid-template-columns: 1fr;
+            }
+            
+            .stats-grid-3 {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            }
+            
+            .stats-grid-4 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .partner-showcase {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                padding: 0 15px;
+            }
+            
+            .logo {
+                font-size: 18px;
+            }
+            
+            .nav-info {
+                font-size: 12px;
+            }
         }
         
         @media (max-width: 480px) {
-            h1 { font-size: 18px; }
-            h2 { font-size: 16px; }
-            h3 { font-size: 14px; }
-            .stats-grid-3 { grid-template-columns: 1fr; }
-            .stats-grid-4 { grid-template-columns: 1fr; }
-            .stat-number { font-size: 16px; }
-            .highlight .big-number { font-size: 20px; }
-            .slide { padding: 12px; }
-        }
-        
-        @media (max-width: 360px) {
-            .stats-grid { grid-template-columns: 1fr; }
-            .table-simple { font-size: 8px; }
-            .competitive-table { font-size: 7px; }
+            .slide {
+                padding: 20px;
+            }
+            
+            .stats-grid-4 {
+                grid-template-columns: 1fr;
+            }
+            
+            .data-table th,
+            .data-table td {
+                padding: 8px 5px;
+                font-size: 11px;
+            }
+            
+            .highlight-box .big-number {
+                font-size: 28px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
+        <div class="header-content">
+            <div class="logo">PMW × LEE'S FROZEN FOOD Partnership 2025</div>
+            <div class="nav-info">Strategic Import Collaboration</div>
+        </div>
+    </div>
+
+    <div class="main-container">
         
-        <!-- Slide 1: Tajuk Utama & Overview -->
+        <!-- Slide 1: Title & Overview -->
         <div class="slide">
-            <div class="slide-number">1/12</div>
-            <h1>CADANGAN KERJASAMA STRATEGIK</h1>
-            <div class="highlight">
+            <div class="slide-header">
+                <div class="slide-number">Slide 1 of 12</div>
+                <h1>CADANGAN KERJASAMA STRATEGIK</h1>
+            </div>
+            
+            <div class="highlight-box">
                 <div class="big-number">PMW × LEE'S FROZEN FOOD</div>
-                <div class="label">Transformasi Industri Frozen Food Malaysia</div>
+                <div class="description">Transformasi Industry Frozen Food Malaysia melalui Import Excellence</div>
             </div>
             
-            <div class="partner-box">
-                <div class="partner-name">PAK MAT WESTERN</div>
-                <p>• <strong>15 Tahun Kepakaran</strong> dalam frozen food Malaysia<br>
-                • <strong>RM70 Juta Jualan 2024</strong> track record terbukti<br>
-                • <strong>2,000+ Reseller Network</strong> aktif seluruh negara<br>
-                • <strong>11 Cawangan Strategik</strong> dari Johor ke Kedah</p>
+            <div class="partner-showcase">
+                <div class="partner-card">
+                    <div class="partner-name">PAK MAT WESTERN</div>
+                    <ul>
+                        <li><strong>15 Tahun Kepakaran</strong> dalam frozen food Malaysia</li>
+                        <li><strong>RM70 Juta Jualan 2024</strong> track record terbukti</li>
+                        <li><strong>2,000+ Reseller Network</strong> aktif seluruh negara</li>
+                        <li><strong>11 Cawangan Strategik</strong> dari Johor ke Kedah</li>
+                        <li><strong>5.3M Social Media Followers</strong> digital dominance</li>
+                    </ul>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-name">LEE'S FROZEN FOOD SDN. BHD.</div>
+                    <ul>
+                        <li><strong>Ditubuhkan 1977</strong> - 47 tahun kepakaran import</li>
+                        <li><strong>Import Terus dari 8 Negara</strong> global sourcing</li>
+                        <li><strong>30-40% Lebih Murah</strong> vs pembekal tempatan</li>
+                        <li><strong>121 Kontena Kapasiti</strong> tahunan (3,011 tan)</li>
+                        <li><strong>Volume Purchase Power</strong> 20-40 tan/kontena</li>
+                    </ul>
+                </div>
             </div>
             
-            <div class="partner-box">
-                <div class="partner-name">LEE'S FROZEN FOOD SDN. BHD.</div>
-                <p>• <strong>Ditubuhkan 1977</strong> - 47 tahun kepakaran industri<br>
-                • <strong>Import Terus Antarabangsa</strong> dari 8 negara<br>
-                • <strong>30-40% Lebih Murah</strong> vs pembekal tempatan<br>
-                • <strong>121 Kontena Kapasiti</strong> tahunan (3,011 tan)<br>
-                • <strong>Volume Purchasing Power</strong> 20-40 tan/kontena</p>
-            </div>
-            
-            <div class="highlight">
-                <div class="label">Strategic Partnership untuk mencapai 25% market share dalam industri frozen food Malaysia bernilai RM4.2 billion dengan Lee's Frozen Food Sdn. Bhd. sebagai partner import strategik</div>
+            <div class="highlight-box">
+                <div class="description">Strategic Partnership untuk mencapai 25% market share dalam industri frozen food Malaysia bernilai RM4.2 billion dengan Lee's Frozen Food sebagai partner import strategik</div>
             </div>
         </div>
         
-        <!-- Slide 2: Visi Misi Strategic -->
+        <!-- Slide 2: Market Opportunity -->
         <div class="slide">
-            <div class="slide-number">2/12</div>
-            <h2>VISI & MISI KERJASAMA STRATEGIK</h2>
-            
-            <h3>🎯 VISI 2030</h3>
-            <div class="highlight">
-                <div class="label">"Menjadi pembekal utama produk makanan berkualiti tinggi dengan harga mampu milik untuk rakyat Malaysia, dengan 30% pasaran produk frozen di saluran runcit utama"</div>
+            <div class="slide-header">
+                <div class="slide-number">Slide 2 of 12</div>
+                <h2>PELUANG PASARAN MALAYSIA</h2>
             </div>
             
-            <h3>🚀 MISI STRATEGIK</h3>
-            <ul>
-                <li><strong>Bekalan Berterusan:</strong> Memastikan bekalan 365 hari tanpa gangguan kepada seluruh network</li>
-                <li><strong>Harga Berdaya Saing:</strong> Mengekalkan harga 20% lebih rendah dari pesaing utama</li>
-                <li><strong>Inovasi Produk:</strong> Memperkenalkan 5 produk baharu setiap tahun</li>
-                <li><strong>Pembangunan Komuniti:</strong> Mencipta 500 peluang pekerjaan baharu dalam 3 tahun</li>
-                <li><strong>Pertumbuhan Mampan:</strong> Mencapai pertumbuhan 40% YoY</li>
-            </ul>
+            <div class="highlight-box">
+                <div class="big-number">RM4.2 BILLION</div>
+                <div class="description">Total Market Size Malaysia Frozen Food Industry 2024<br>12-15% Annual Growth Rate</div>
+            </div>
             
-            <h3>📈 TARGET PENCAPAIAN 3 TAHUN</h3>
-            <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">RM200M</div>
-                    <div class="stat-label">Annual Revenue<br>2027 Target</div>
+            <div class="stats-grid-2">
+                <div class="stat-card">
+                    <div class="stat-number">60%</div>
+                    <div class="stat-label">Controlled by 5 Major Players<br>RM2.52B Market Share</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">25%</div>
-                    <div class="stat-label">Market Share<br>Leadership Position</div>
+                <div class="stat-card">
+                    <div class="stat-number">40%</div>
+                    <div class="stat-label">Open Market Opportunity<br>RM1.68B Available</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">200+</div>
-                    <div class="stat-label">Retail Outlets<br>Nationwide Coverage</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">5,000+</div>
-                    <div class="stat-label">Reseller Network<br>Expanded Base</div>
-                </div>
+            </div>
+            
+            <h3>🏢 Major Competitors Analysis</h3>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Market Share</th>
+                            <th>Strengths</th>
+                            <th>Weaknesses</th>
+                            <th>PMW Advantage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>QL Foods</strong></td>
+                            <td>~25%</td>
+                            <td>Market Leader</td>
+                            <td>High Cost Structure</td>
+                            <td>30-40% Cost Savings</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ayamas</strong></td>
+                            <td>~15%</td>
+                            <td>Premium Quality</td>
+                            <td>Limited Range</td>
+                            <td>8-Country Sourcing</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Farm's Best</strong></td>
+                            <td>~10%</td>
+                            <td>Consistent Quality</td>
+                            <td>Limited Innovation</td>
+                            <td>5.3M Social Following</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Ramly</strong></td>
+                            <td>~8%</td>
+                            <td>Brand Recognition</td>
+                            <td>Outdated Systems</td>
+                            <td>Digital Marketing Power</td>
+                        </tr>
+                        <tr class="top-performer">
+                            <td><strong>PMW Target</strong></td>
+                            <td><strong>25%</strong></td>
+                            <td><strong>Cost + Digital</strong></td>
+                            <td><strong>Market Entry</strong></td>
+                            <td><strong>SWEET SPOT</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="content-box">
+                <h4>🎯 Market Trends Driving Growth</h4>
+                <ul>
+                    <li><strong>Convenience Demand:</strong> +18% growth dalam ready-to-cook solutions</li>
+                    <li><strong>Halal Requirement:</strong> Mandatory untuk Malaysia market success</li>
+                    <li><strong>E-commerce Growth:</strong> +35% online sales annually</li>
+                    <li><strong>Premium Quality Focus:</strong> Millennials willing to pay for quality</li>
+                    <li><strong>Urban Lifestyle:</strong> Busy families seeking convenient options</li>
+                </ul>
             </div>
         </div>
         
-        <!-- Slide 3: Prestasi Operasi Semasa -->
+        <!-- Slide 3: PMW Current Performance -->
         <div class="slide">
-            <div class="slide-number">3/12</div>
-            <h2>PRESTASI OPERASI SEMASA 2024</h2>
+            <div class="slide-header">
+                <div class="slide-number">Slide 3 of 12</div>
+                <h2>PRESTASI SEMASA PMW 2024</h2>
+            </div>
             
-            <h3>📊 Pencapaian Utama</h3>
+            <div class="highlight-box">
+                <div class="big-number">RM70 MILLION</div>
+                <div class="description">Annual Revenue 2024 - Strong Foundation untuk Scale dengan Lee's Partnership</div>
+            </div>
+            
             <div class="stats-grid-4">
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">RM70M</div>
-                    <div class="stat-label">Jualan Tahunan<br>RM5.83M/bulan</div>
+                    <div class="stat-label">Total Revenue<br>RM5.83M/bulan</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">1.31M</div>
-                    <div class="stat-label">Unit Terjual<br>109,519 unit/bulan<br>Reseller channel</div>
+                    <div class="stat-label">Unit Terjual<br>109,519/bulan</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
+                    <div class="stat-number">2,000+</div>
+                    <div class="stat-label">Active Resellers<br>92% retention</div>
+                </div>
+                <div class="stat-card">
                     <div class="stat-number">895 Tan</div>
-                    <div class="stat-label">Bahan Mentah<br>35.8 kontena/tahun</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">92%</div>
-                    <div class="stat-label">Customer Retention<br>Rate Tahunan</div>
+                    <div class="stat-label">Current Capacity<br>35.8 kontena/tahun</div>
                 </div>
             </div>
             
-            <h3>💼 Breakdown Revenue Streams</h3>
-            <div class="stats-grid">
-                <div class="stat-box">
+            <h3>💼 Revenue Breakdown Current State</h3>
+            <div class="stats-grid-2">
+                <div class="stat-card">
                     <div class="stat-number">RM40M</div>
-                    <div class="stat-label">Frozen Reseller<br>57.1% total revenue<br>11 cawangan network</div>
+                    <div class="stat-label">Frozen Reseller Network<br>57.1% total revenue<br>11 cawangan aktif</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">RM30M</div>
                     <div class="stat-label">Restaurant PMW<br>42.9% total revenue<br>Diversified operations</div>
                 </div>
             </div>
             
-            <h3>🏪 Prestasi Reseller Network</h3>
-            <div class="detail-box">
-                <h4>Top 5 Performers 2024:</h4>
-                <ul>
-                    <li><strong>1. Shafika (JB):</strong> 293,653 unit (21.8% share) - RM8.71M</li>
-                    <li><strong>2. Badrul (Puchong):</strong> 240,502 unit (17.8% share) - RM7.13M</li>
-                    <li><strong>3. Idanas (Sepang):</strong> 162,955 unit (12.1% share) - RM4.83M</li>
-                    <li><strong>4. Wan Hafiza (Duta Keramat):</strong> 136,154 unit (10.1% share) - RM4.04M</li>
-                    <li><strong>5. Amni (Kuala Kangsar):</strong> 114,055 unit (8.5% share) - RM3.38M</li>
-                </ul>
-                
-                <h5>Complete 11 Outlets Performance:</h5>
-                <table class="table-simple">
-                    <tr>
-                        <th>Rank</th>
-                        <th>Cawangan</th>
-                        <th>PIC</th>
-                        <th>Unit Terjual</th>
-                        <th>Revenue (RM)</th>
-                        <th>% Share</th>
-                    </tr>
-                    <tr style="background: rgba(255,215,0,0.3);">
-                        <td>🏆 1</td>
-                        <td>JB</td>
-                        <td>Shafika</td>
-                        <td>293,653</td>
-                        <td>8,710,000</td>
-                        <td>21.8%</td>
-                    </tr>
-                    <tr>
-                        <td>🥈 2</td>
-                        <td>Puchong</td>
-                        <td>Badrul</td>
-                        <td>240,502</td>
-                        <td>7,130,000</td>
-                        <td>17.8%</td>
-                    </tr>
-                    <tr>
-                        <td>🥉 3</td>
-                        <td>Sepang</td>
-                        <td>Idanas</td>
-                        <td>162,955</td>
-                        <td>4,830,000</td>
-                        <td>12.1%</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Duta Keramat</td>
-                        <td>Wan Hafiza</td>
-                        <td>136,154</td>
-                        <td>4,040,000</td>
-                        <td>10.1%</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Kuala Kangsar</td>
-                        <td>Amni</td>
-                        <td>114,055</td>
-                        <td>3,380,000</td>
-                        <td>8.5%</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>Kedah</td>
-                        <td>Hajri</td>
-                        <td>81,425</td>
-                        <td>2,410,000</td>
-                        <td>6.0%</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>Kuantan</td>
-                        <td>Ezatul</td>
-                        <td>79,565</td>
-                        <td>2,360,000</td>
-                        <td>5.9%</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>Muar</td>
-                        <td>Noorul</td>
-                        <td>67,165</td>
-                        <td>1,990,000</td>
-                        <td>5.0%</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>Melaka</td>
-                        <td>Alina</td>
-                        <td>52,750</td>
-                        <td>1,560,000</td>
-                        <td>3.9%</td>
-                    </tr>
-                    <tr>
-                        <td>10</td>
-                        <td>Selayang</td>
-                        <td>Rasyidah</td>
-                        <td>49,415</td>
-                        <td>1,460,000</td>
-                        <td>3.7%</td>
-                    </tr>
-                    <tr>
-                        <td>11</td>
-                        <td>Johor</td>
-                        <td>Fitri</td>
-                        <td>36,595</td>
-                        <td>1,080,000</td>
-                        <td>2.7%</td>
-                    </tr>
-                    <tr style="background: rgba(76,175,80,0.3); font-weight: bold;">
-                        <td colspan="3">TOTAL</td>
-                        <td>1,314,234</td>
-                        <td>38,950,000</td>
-                        <td>100%</td>
-                    </tr>
+            <h3>🏆 Top 5 Reseller Performance 2024</h3>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Cawangan</th>
+                            <th>PIC</th>
+                            <th>Unit Terjual</th>
+                            <th>Revenue (RM)</th>
+                            <th>Market Share</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-performer">
+                            <td>🏆 1</td>
+                            <td>JB Johor</td>
+                            <td>Shafika</td>
+                            <td>293,653</td>
+                            <td>8,710,000</td>
+                            <td>21.8%</td>
+                        </tr>
+                        <tr>
+                            <td>🥈 2</td>
+                            <td>Puchong KL</td>
+                            <td>Badrul</td>
+                            <td>240,502</td>
+                            <td>7,130,000</td>
+                            <td>17.8%</td>
+                        </tr>
+                        <tr>
+                            <td>🥉 3</td>
+                            <td>Sepang Selangor</td>
+                            <td>Idanas</td>
+                            <td>162,955</td>
+                            <td>4,830,000</td>
+                            <td>12.1%</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Duta Keramat KL</td>
+                            <td>Wan Hafiza</td>
+                            <td>136,154</td>
+                            <td>4,040,000</td>
+                            <td>10.1%</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>Kuala Kangsar</td>
+                            <td>Amni</td>
+                            <td>114,055</td>
+                            <td>3,380,000</td>
+                            <td>8.5%</td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
             
-            <h3>🗺️ Regional Performance Analysis</h3>
-            <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">RM20.75M</div>
-                    <div class="stat-label">Central Region (53.3%)<br>KL, Selangor, Perak<br>703,081 unit</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM13.36M</div>
-                    <div class="stat-label">Southern Region (34.3%)<br>Johor, Melaka<br>450,163 unit</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM2.41M</div>
-                    <div class="stat-label">Northern Region (6.2%)<br>Kedah, Perlis<br>81,425 unit</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM2.36M</div>
-                    <div class="stat-label">East Coast (6.1%)<br>Pahang<br>79,565 unit</div>
-                </div>
-            </div>
-            
-            <h3>🍽️ Restaurant PMW Operations</h3>
-            <div class="stats-grid-3">
-                <div class="stat-box">
-                    <div class="stat-number">RM30M</div>
-                    <div class="stat-label">Restaurant Revenue<br>RM2.5M/bulan<br>42.9% total business</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">253 Tan</div>
-                    <div class="stat-label">Bahan Mentah<br>21.1 tan/bulan<br>Consistent demand</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">Diversified</div>
-                    <div class="stat-label">Revenue Model<br>Multiple streams<br>Risk balanced</div>
-                </div>
-            </div>
-            
-            <div class="highlight">
-                <div class="label">BASELINE KUKUH: RM70M revenue dengan diversified streams - Foundation solid untuk scale dengan Lee's Frozen Food partnership</div>
+            <div class="content-box">
+                <h4>📊 Key Performance Insights</h4>
+                <ul>
+                    <li><strong>Top 3 Golden Triangle:</strong> 51.7% contribution (JB, Puchong, Sepang)</li>
+                    <li><strong>Average Revenue Per Unit:</strong> RM29.64 (consistent pricing structure)</li>
+                    <li><strong>Regional Strength:</strong> 87.6% Central + Southern regions dominance</li>
+                    <li><strong>Growth Opportunity:</strong> 12.4% Northern + East Coast expansion potential</li>
+                    <li><strong>Foundation Solid:</strong> Ready untuk scale dengan Lee's import advantage</li>
+                </ul>
             </div>
         </div>
         
-        <!-- Slide 4: Data Jualan Reseller Detail -->
+        <!-- Slide 4: Lee's Frozen Food Power -->
         <div class="slide">
-            <div class="slide-number">4/13</div>
-            <h2>DATA JUALAN RESELLER 2024 - ANALISIS MENDALAM</h2>
+            <div class="slide-header">
+                <div class="slide-number">Slide 4 of 12</div>
+                <h2>KEKUATAN LEE'S FROZEN FOOD SDN. BHD.</h2>
+            </div>
             
-            <h3>📋 Performance Ranking Lengkap</h3>
-            <table class="table-simple">
-                <tr>
-                    <th>Rank</th>
-                    <th>Cawangan</th>
-                    <th>PIC</th>
-                    <th>Unit Terjual</th>
-                    <th>Revenue (RM)</th>
-                    <th>% Share</th>
-                    <th>Avg/Bulan</th>
-                </tr>
-                <tr style="background: rgba(255,215,0,0.4);">
-                    <td>🏆 1</td>
-                    <td>JB Johor</td>
-                    <td>Shafika</td>
-                    <td>293,653</td>
-                    <td>8,710,000</td>
-                    <td>21.8%</td>
-                    <td>24,471</td>
-                </tr>
-                <tr style="background: rgba(192,192,192,0.3);">
-                    <td>🥈 2</td>
-                    <td>Puchong KL</td>
-                    <td>Badrul</td>
-                    <td>240,502</td>
-                    <td>7,130,000</td>
-                    <td>17.8%</td>
-                    <td>20,042</td>
-                </tr>
-                <tr style="background: rgba(205,127,50,0.3);">
-                    <td>🥉 3</td>
-                    <td>Sepang Selangor</td>
-                    <td>Idanas</td>
-                    <td>162,955</td>
-                    <td>4,830,000</td>
-                    <td>12.1%</td>
-                    <td>13,580</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Duta Keramat KL</td>
-                    <td>Wan Hafiza</td>
-                    <td>136,154</td>
-                    <td>4,040,000</td>
-                    <td>10.1%</td>
-                    <td>11,346</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Kuala Kangsar Perak</td>
-                    <td>Amni</td>
-                    <td>114,055</td>
-                    <td>3,380,000</td>
-                    <td>8.5%</td>
-                    <td>9,505</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>Kedah</td>
-                    <td>Hajri</td>
-                    <td>81,425</td>
-                    <td>2,410,000</td>
-                    <td>6.0%</td>
-                    <td>6,785</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Kuantan Pahang</td>
-                    <td>Ezatul</td>
-                    <td>79,565</td>
-                    <td>2,360,000</td>
-                    <td>5.9%</td>
-                    <td>6,630</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Muar Johor</td>
-                    <td>Noorul</td>
-                    <td>67,165</td>
-                    <td>1,990,000</td>
-                    <td>5.0%</td>
-                    <td>5,597</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Melaka</td>
-                    <td>Alina</td>
-                    <td>52,750</td>
-                    <td>1,560,000</td>
-                    <td>3.9%</td>
-                    <td>4,396</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>Selayang Selangor</td>
-                    <td>Rasyidah</td>
-                    <td>49,415</td>
-                    <td>1,460,000</td>
-                    <td>3.7%</td>
-                    <td>4,118</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Johor</td>
-                    <td>Fitri</td>
-                    <td>36,595</td>
-                    <td>1,080,000</td>
-                    <td>2.7%</td>
-                    <td>3,050</td>
-                </tr>
-                <tr style="background: rgba(76,175,80,0.4); font-weight: bold;">
-                    <td colspan="3">TOTAL RESELLER</td>
-                    <td>1,314,234</td>
-                    <td>38,950,000</td>
-                    <td>100%</td>
-                    <td>109,519</td>
-                </tr>
-            </table>
+            <div class="highlight-box">
+                <div class="big-number">47 TAHUN EXPERIENCE</div>
+                <div class="description">Established 1977 - Import Excellence & Global Sourcing Power</div>
+            </div>
             
-            <h3>🎯 Performance Analysis Insights</h3>
             <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">Top 3</div>
-                    <div class="stat-label">Golden Triangle<br>51.7% contribution<br>RM20.67M revenue</div>
+                <div class="stat-card">
+                    <div class="stat-number">8 Negara</div>
+                    <div class="stat-label">Global Sourcing<br>Brazil, Argentina<br>India, Thailand, etc</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM29.64</div>
-                    <div class="stat-label">Revenue Per Unit<br>Consistent pricing<br>Stable margins</div>
+                <div class="stat-card">
+                    <div class="stat-number">121 Kontena</div>
+                    <div class="stat-label">Annual Capacity<br>3,011 Tan<br>Volume Advantage</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">87.6%</div>
-                    <div class="stat-label">Central + Southern<br>Regional dominance<br>Market concentration</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">12.4%</div>
-                    <div class="stat-label">Growth Opportunity<br>Northern + East Coast<br>Expansion potential</div>
-                </div>
-            </div>
-            
-            <h3>📊 Regional Distribution Analysis</h3>
-            <div class="detail-box">
-                <h4>🏢 Central Region (53.3% share - RM20.75M):</h4>
-                <ul>
-                    <li><strong>Puchong (Badrul):</strong> RM7.13M - Urban KL advantage</li>
-                    <li><strong>Sepang (Idanas):</strong> RM4.83M - KLIA catchment area</li>
-                    <li><strong>Duta Keramat (Wan Hafiza):</strong> RM4.04M - Central KL location</li>
-                    <li><strong>Kuala Kangsar (Amni):</strong> RM3.38M - Perak hub</li>
-                    <li><strong>Selayang (Rasyidah):</strong> RM1.46M - Northern Selangor</li>
-                </ul>
-            </div>
-            
-            <div class="detail-box">
-                <h4>🌴 Southern Region (34.3% share - RM13.36M):</h4>
-                <ul>
-                    <li><strong>JB (Shafika):</strong> RM8.71M - Border trade advantage, Singapore proximity</li>
-                    <li><strong>Muar (Noorul):</strong> RM1.99M - Secondary Johor market</li>
-                    <li><strong>Melaka (Alina):</strong> RM1.56M - Heritage tourism catchment</li>
-                    <li><strong>Johor (Fitri):</strong> RM1.08M - Rural Johor coverage</li>
-                </ul>
-            </div>
-            
-            <div class="detail-box">
-                <h4>🌾 Growth Opportunity Regions (12.4% share - RM4.77M):</h4>
-                <ul>
-                    <li><strong>Northern (Kedah - Hajri):</strong> RM2.41M - Rice bowl region potential</li>
-                    <li><strong>East Coast (Kuantan - Ezatul):</strong> RM2.36M - Oil & gas industry market</li>
-                    <li><strong>Sabah Sarawak:</strong> RM0 - Virgin territory untuk expansion</li>
-                </ul>
-            </div>
-            
-            <h3>💡 Strategic Network Insights</h3>
-            <div class="highlight">
-                <div class="label">NETWORK FOUNDATION SANGAT KUKUH: RM38.95M from 11 outlets dengan 92% retention rate, ready untuk scale dengan Mydin partnership dan Lee's Frozen Food import advantage</div>
-            </div>
-        </div>
-        
-        <!-- Slide 5: Kekuatan Import Lee's Frozen Food -->
-        <div class="slide">
-            <div class="slide-number">5/13</div>
-            <h2>KEKUATAN IMPORT LEE'S FROZEN FOOD SDN. BHD.</h2>
-            
-            <h3>🏢 Profil Syarikat Established</h3>
-            <div class="detail-box">
-                <ul>
-                    <li><strong>Penubuhan:</strong> 4 Mac 1977 (47 tahun beroperasi)</li>
-                    <li><strong>Status:</strong> Syarikat Sendirian Berhad terdaftar SSM</li>
-                    <li><strong>No. Pendaftaran:</strong> 197701000823 (31737-X)</li>
-                    <li><strong>Lokasi:</strong> Berpusat di Kuala Lumpur</li>
-                    <li><strong>Reputasi:</strong> Pembekal frozen food yang dipercayai selama hampir 5 dekad</li>
-                </ul>
-            </div>
-            
-            <h3>🌍 Rangkaian Import Global</h3>
-            <div class="highlight">
-                <div class="big-number">121 KONTENA</div>
-                <div class="label">Kapasiti Tahunan - 3,011 Tan Bekalan</div>
-            </div>
-            
-            <h4>Import Network Strategic:</h4>
-            <ul>
-                <li><strong>8 Negara Sumber:</strong> Brazil, Argentina, India, Thailand, Vietnam, Myanmar, Indonesia, China</li>
-                <li><strong>Volume Pembelian:</strong> 20-40 tan per kontena dengan fleksibiliti order</li>
-                <li><strong>Cost Advantage:</strong> 30-40% lebih murah vs pembekal tempatan</li>
-                <li><strong>Quality Control:</strong> Standard antarabangsa dengan sijil halal terjamin</li>
-                <li><strong>Supply Continuity:</strong> 365 hari bekalan berterusan tanpa gangguan</li>
-                <li><strong>Experience:</strong> 47 tahun pengalaman dalam import management</li>
-            </ul>
-            
-            <h3>💰 Analisis Penjimatan Kos</h3>
-            <div class="stats-grid-4">
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">30-40%</div>
-                    <div class="stat-label">Penjimatan vs<br>Local Suppliers</div>
+                    <div class="stat-label">Cost Savings<br>vs Local Suppliers<br>Sustainable Edge</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM3.50-5.00</div>
-                    <div class="stat-label">Savings per KG<br>Direct Import</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM12M</div>
-                    <div class="stat-label">Annual Savings<br>Full Scale</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Halal Certified<br>Products</div>
+                <div class="stat-card">
+                    <div class="stat-number">20-40 Tan</div>
+                    <div class="stat-label">Per Container<br>Flexible Volume<br>Efficient Purchasing</div>
                 </div>
             </div>
             
-            <h3>📦 Product Portfolio & Quality</h3>
-            <div class="detail-box">
-                <h4>Category Coverage:</h4>
+            <h3>🌍 Global Import Network</h3>
+            <div class="content-box">
+                <h4>🚢 Strategic Sourcing Countries</h4>
                 <ul>
-                    <li><strong>Frozen Chicken:</strong> Various cuts, export grade quality</li>
-                    <li><strong>Frozen Mutton:</strong> Premium cuts from certified suppliers</li>
-                    <li><strong>Seafood Range:</strong> Fish, prawns, squid varieties</li>
-                    <li><strong>Processed Foods:</strong> Value-added frozen products</li>
-                    <li><strong>Specialty Items:</strong> Seasonal and festival products</li>
+                    <li><strong>South America:</strong> Brazil (premium beef), Argentina (quality lamb)</li>
+                    <li><strong>Asia Pacific:</strong> India (halal certified), Thailand (seafood)</li>
+                    <li><strong>Southeast Asia:</strong> Vietnam, Myanmar, Indonesia (competitive pricing)</li>
+                    <li><strong>Far East:</strong> China (processed foods & specialty items)</li>
+                    <li><strong>Quality Assurance:</strong> Halal certified, international standards</li>
                 </ul>
+            </div>
+            
+            <h3>💰 Cost Advantage Analysis</h3>
+            <div class="stats-grid-3">
+                <div class="stat-card">
+                    <div class="stat-number">RM3.50-5.00</div>
+                    <div class="stat-label">Savings per KG<br>Direct Import<br>vs Local Supplier</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">RM12M</div>
+                    <div class="stat-label">Annual Savings<br>at Full Scale<br>3,011 Tan capacity</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Halal Certified<br>All Products<br>Malaysia Compliant</div>
+                </div>
             </div>
             
             <h3>🔗 Supply Chain Excellence</h3>
-            <div class="detail-box">
-                <h4>Operational Advantages:</h4>
+            <div class="content-box">
+                <h4>🏆 Operational Advantages</h4>
                 <ul>
-                    <li><strong>47 Years Experience:</strong> Deep understanding of import regulations</li>
-                    <li><strong>Direct Relationships:</strong> No middleman markup dengan suppliers global</li>
-                    <li><strong>Container Load Efficiency:</strong> Maximum volume utilization</li>
+                    <li><strong>47 Years Experience:</strong> Deep understanding import regulations & customs</li>
+                    <li><strong>Direct Relationships:</strong> No middleman markup dengan global suppliers</li>
+                    <li><strong>Container Efficiency:</strong> Maximum volume utilization, optimal loading</li>
                     <li><strong>Currency Management:</strong> Hedging strategies for price stability</li>
-                    <li><strong>Documentation Expertise:</strong> Smooth customs clearance</li>
+                    <li><strong>Documentation Expertise:</strong> Smooth customs clearance, minimal delays</li>
                     <li><strong>Cold Chain Management:</strong> Temperature integrity from port to customer</li>
                 </ul>
             </div>
             
-            <div class="highlight">
-                <div class="label">TRANSFORMASI: Dari 35.8 kontena semasa → 121 kontena full capacity = 238% growth potential dengan partner yang terbukti kredibel selama 47 tahun</div>
+            <div class="highlight-box">
+                <div class="description">TRANSFORMATION POTENTIAL: Dari 35.8 kontena (PMW current) → 121 kontena (Lee's capacity) = 238% growth potential dengan partner terbukti selama 47 tahun</div>
             </div>
         </div>
         
-        <!-- Slide 5: Analisis Pasaran & Peluang -->
+        <!-- Slide 5: Digital Marketing Power -->
         <div class="slide">
-            <div class="slide-number">6/13</div>
-            <h2>ANALISIS PASARAN & PELUANG</h2>
-            
-            <h3>📊 Malaysia Frozen Food Market</h3>
-            <div class="highlight">
-                <div class="big-number">RM4.2B</div>
-                <div class="label">Total Market Size 2024 - 12-15% Annual Growth</div>
+            <div class="slide-header">
+                <div class="slide-number">Slide 5 of 12</div>
+                <h2>KEKUATAN DIGITAL MARKETING PMW</h2>
             </div>
             
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-number">60%</div>
-                    <div class="stat-label">Controlled by<br>5 Major Players</div>
+            <div class="highlight-box">
+                <div class="big-number">5.3 MILLION FOLLOWERS</div>
+                <div class="description">Total Social Media Reach - Industry Leading Digital Presence</div>
+            </div>
+            
+            <div class="stats-grid-3">
+                <div class="stat-card">
+                    <div class="stat-number">2.8M</div>
+                    <div class="stat-label">Facebook Followers<br>High Engagement<br>Community Active</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">40%</div>
-                    <div class="stat-label">Open Market<br>RM1.68B Opportunity</div>
+                <div class="stat-card">
+                    <div class="stat-number">1.5M</div>
+                    <div class="stat-label">TikTok Followers<br>Viral Content<br>Gen Z Reach</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">950K</div>
+                    <div class="stat-label">Instagram Followers<br>Visual Marketing<br>Premium Audience</div>
                 </div>
             </div>
             
-            <h3>🏢 Major Competitors Analysis</h3>
-            <table class="competitive-table">
-                <tr>
-                    <th>Player</th>
-                    <th>Market Share</th>
-                    <th>Strengths</th>
-                    <th>Weaknesses</th>
-                </tr>
-                <tr>
-                    <td>QL Foods</td>
-                    <td>~25%</td>
-                    <td>Market Leader</td>
-                    <td>High Cost Structure</td>
-                </tr>
-                <tr>
-                    <td>Ayamas</td>
-                    <td>~15%</td>
-                    <td>Premium Quality</td>
-                    <td>Limited Range</td>
-                </tr>
-                <tr>
-                    <td>Farm's Best</td>
-                    <td>~10%</td>
-                    <td>Consistent Quality</td>
-                    <td>Limited Innovation</td>
-                </tr>
-                <tr>
-                    <td>Ramly</td>
-                    <td>~8%</td>
-                    <td>Brand Recognition</td>
-                    <td>Outdated Systems</td>
-                </tr>
-                <tr>
-                    <td>Others</td>
-                    <td>~2%</td>
-                    <td>Niche Products</td>
-                    <td>Limited Distribution</td>
-                </tr>
-            </table>
-            
-            <h3>🎯 PMW Competitive Positioning</h3>
-            <div class="highlight">
-                <div class="big-number">SWEET SPOT OPPORTUNITY</div>
-                <div class="label">Premium Quality at Competitive Price - Gap between high-price leaders dan budget players</div>
+            <h3>🌟 Content Creator Powerhouse</h3>
+            <div class="content-box">
+                <h4>🎭 PMW Viral Talent</h4>
+                <ul>
+                    <li><strong>Una (TikTok Queen):</strong> 12.5M followers, specialist food review & comedy</li>
+                    <li><strong>Eca (Instagram Star):</strong> 8.2M followers, lifestyle & cooking content</li>
+                    <li><strong>Performance Metrics:</strong> 2-5M views per video, 85% engagement rate</li>
+                    <li><strong>Conversion Power:</strong> 12% social to sales (industry leading)</li>
+                    <li><strong>Real-time Marketing:</strong> 24/7 content creation & trend response</li>
+                </ul>
             </div>
             
-            <h4>Market Trends Driving Growth:</h4>
-            <ul>
-                <li><strong>Convenience Demand:</strong> +18% growth in ready-to-cook solutions</li>
-                <li><strong>Halal Requirement:</strong> Mandatory for Malaysia market success</li>
-                <li><strong>E-commerce Growth:</strong> +35% online sales annually</li>
-                <li><strong>Premium Products:</strong> Quality focus among millennials</li>
-                <li><strong>Urban Lifestyle:</strong> Busy families seeking convenient options</li>
-            </ul>
+            <h3>🎬 Celebrity Collaborations Portfolio</h3>
+            <div class="content-box">
+                <h4>🌟 A-List Partnership Network</h4>
+                <ul>
+                    <li><strong>Local Celebrities:</strong> Siti Nurhaliza, Datuk Aliff Syukri, Fatin Afeefa</li>
+                    <li><strong>Comedy Stars:</strong> Zizan Razak, Bell Ngasri, Tauke Jambu</li>
+                    <li><strong>International Reach:</strong> Indonesian food bloggers, Thai cooking channels</li>
+                    <li><strong>Influencer Network:</strong> 200+ micro & macro influencers aktif</li>
+                    <li><strong>Campaign Impact:</strong> 40% sales spike during celebrity campaigns</li>
+                </ul>
+            </div>
             
-            <h3>📈 Market Entry Strategy</h3>
-            <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">25%</div>
-                    <div class="stat-label">Target Market<br>Share 3 years</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM1.05B</div>
-                    <div class="stat-label">Revenue Potential<br>At 25% share</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">1st Mover</div>
-                    <div class="stat-label">Digital Innovation<br>Advantage</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">Cost Leader</div>
-                    <div class="stat-label">30-40% Savings<br>Sustainable</div>
-                </div>
+            <h3>📊 Digital Supremacy vs Competitors</h3>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Digital Metric</th>
+                            <th>PMW</th>
+                            <th>QL Foods</th>
+                            <th>Ayamas</th>
+                            <th>Farm's Best</th>
+                            <th>PMW Advantage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-performer">
+                            <td><strong>Total Followers</strong></td>
+                            <td><strong>5.3M</strong></td>
+                            <td>200K</td>
+                            <td>150K</td>
+                            <td>50K</td>
+                            <td><strong>26x Larger</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Monthly Video Views</td>
+                            <td>25M</td>
+                            <td>500K</td>
+                            <td>300K</td>
+                            <td>100K</td>
+                            <td>50x More Views</td>
+                        </tr>
+                        <tr>
+                            <td>Celebrity Collabs</td>
+                            <td>A-List Daily</td>
+                            <td>None</td>
+                            <td>Limited</td>
+                            <td>None</td>
+                            <td>Exclusive Access</td>
+                        </tr>
+                        <tr>
+                            <td>Content Frequency</td>
+                            <td>24/7 Real-time</td>
+                            <td>Weekly</td>
+                            <td>Bi-weekly</td>
+                            <td>Monthly</td>
+                            <td>Always Trending</td>
+                        </tr>
+                        <tr>
+                            <td>Conversion Rate</td>
+                            <td>12%</td>
+                            <td>2%</td>
+                            <td>3%</td>
+                            <td>1%</td>
+                            <td>6x Higher ROI</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="highlight-box">
+                <div class="description">UNMATCHED DIGITAL POWER: 5.3M followers + viral content machine + celebrity network = Perfect storm untuk drive massive demand for Lee's import products</div>
             </div>
         </div>
         
-        <!-- Slide 6: Strategi Kerjasama Retail Giants -->
+        <!-- Slide 6: Competitive Advantages -->
         <div class="slide">
-            <div class="slide-number">7/13</div>
-            <h2>STRATEGI KERJASAMA MYDIN & BILLION</h2>
-            
-            <h3>🎯 DUAL RETAIL PARTNERSHIP STRATEGY</h3>
-            <div class="highlight">
-                <div class="big-number">MYDIN + BILLION</div>
-                <div class="label">Two Major Retail Giants untuk Maximum Market Penetration</div>
+            <div class="slide-header">
+                <div class="slide-number">Slide 6 of 12</div>
+                <h2>KELEBIHAN KOMPETITIF STRATEGIK</h2>
             </div>
             
-            <h3>🏬 Mydin Network Power</h3>
-            <div class="stats-grid-3">
-                <div class="stat-box">
-                    <div class="stat-number">58</div>
-                    <div class="stat-label">Cawangan Nationwide<br>Mass Market Focus</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">3.9M</div>
-                    <div class="stat-label">Monthly Customers<br>High Footfall</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM450M</div>
-                    <div class="stat-label">Target Revenue<br>Potential (Mydin)</div>
-                </div>
+            <div class="highlight-box">
+                <div class="big-number">PERFECT COMBINATION</div>
+                <div class="description">PMW Distribution Power + Lee's Import Excellence = Market Leadership Formula</div>
             </div>
             
-            <h3>🏪 Billion Network Power</h3>
-            <div class="stats-grid-3">
-                <div class="stat-box">
-                    <div class="stat-number">52</div>
-                    <div class="stat-label">Supermarket Outlets<br>Premium Positioning</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">3.1M</div>
-                    <div class="stat-label">Monthly Customers<br>Higher Spending</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM400M</div>
-                    <div class="stat-label">Target Revenue<br>Potential (Billion)</div>
-                </div>
-            </div>
-            
-            <h3>💰 COMBINED TARGET: RM15M MONTHLY SALES</h3>
-            <div class="highlight">
-                <div class="big-number">RM180M Annual Revenue</div>
-                <div class="label">110 Total Outlets (58 Mydin + 52 Billion)<br>Combined Market Reach: 7M Monthly Customers</div>
-            </div>
-            
-            <h4>📋 Revenue Breakdown Analysis:</h4>
+            <h3>🛡️ Sustainable Competitive Moats</h3>
             <div class="stats-grid-4">
-                <div class="stat-box">
+                <div class="stat-card">
+                    <div class="stat-number">COST</div>
+                    <div class="stat-label">30-40% savings<br>vs competitors<br>sustainable advantage</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">DIGITAL</div>
+                    <div class="stat-label">5.3M followers<br>26x larger than<br>major competitors</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">NETWORK</div>
+                    <div class="stat-label">2,000+ resellers<br>11 cawangan<br>established base</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">SUPPLY</div>
+                    <div class="stat-label">47-year expertise<br>global sourcing<br>reliable partner</div>
+                </div>
+            </div>
+            
+            <h3>💪 Strategic Positioning Matrix</h3>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Success Factor</th>
+                            <th>PMW + Lee's</th>
+                            <th>QL Foods</th>
+                            <th>Ayamas</th>
+                            <th>Farm's Best</th>
+                            <th>Competitive Gap</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="top-performer">
+                            <td><strong>Cost Structure</strong></td>
+                            <td><strong>30-40% LOWER</strong></td>
+                            <td>High Overhead</td>
+                            <td>Premium Pricing</td>
+                            <td>Moderate Cost</td>
+                            <td><strong>UNBEATABLE</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Social Media Power</td>
+                            <td>5.3M Followers</td>
+                            <td>200K Limited</td>
+                            <td>150K Basic</td>
+                            <td>50K Minimal</td>
+                            <td>26x Advantage</td>
+                        </tr>
+                        <tr>
+                            <td>Supply Reliability</td>
+                            <td>47-Year Import Expertise</td>
+                            <td>Local Dependent</td>
+                            <td>Limited Suppliers</td>
+                            <td>Regional Sources</td>
+                            <td>Global Sourcing</td>
+                        </tr>
+                        <tr>
+                            <td>Distribution Network</td>
+                            <td>2,000+ Resellers</td>
+                            <td>Corporate Focus</td>
+                            <td>Selective Network</td>
+                            <td>Limited Coverage</td>
+                            <td>Widest Reach</td>
+                        </tr>
+                        <tr>
+                            <td>Innovation Capability</td>
+                            <td>ADAT + Social Commerce</td>
+                            <td>Traditional Systems</td>
+                            <td>Limited Tech</td>
+                            <td>Basic Operations</td>
+                            <td>Digital Pioneer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>🎯 Market Disruption Strategy</h3>
+            <div class="content-box">
+                <h4>🚀 How We Win Against Established Players</h4>
+                <ul>
+                    <li><strong>Price Leadership:</strong> Lee's import savings = 30-40% lower costs, unmatched value</li>
+                    <li><strong>Digital Dominance:</strong> 5.3M social reach drives massive demand vs competitors' minimal presence</li>
+                    <li><strong>Supply Security:</strong> 47-year expertise ensures 365-day availability vs local supply constraints</li>
+                    <li><strong>Distribution Excellence:</strong> 2,000+ resellers + proven network vs corporate-only focus</li>
+                    <li><strong>Innovation Edge:</strong> Social commerce integration vs traditional business models</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <div class="description">MARKET DISRUPTOR POSITIONING: Menjadi pemain baharu yang combine cost advantage, digital supremacy, dan supply excellence untuk challenge incumbents</div>
+            </div>
+        </div>
+        
+        <!-- Slide 7: Mydin & Billion Partnership Strategy -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 7 of 13</div>
+                <h2>STRATEGI KERJASAMA MYDIN & BILLION</h2>
+            </div>
+            
+            <div class="highlight-box">
+                <div class="big-number">DUAL RETAIL PARTNERSHIP</div>
+                <div class="description">Two Major Retail Giants untuk Maximum Market Penetration</div>
+            </div>
+            
+            <div class="partner-showcase">
+                <div class="partner-card">
+                    <div class="partner-name">🏬 MYDIN NETWORK POWER</div>
+                    <div class="stats-grid-3" style="margin: 15px 0;">
+                        <div class="stat-card" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%); margin: 0;">
+                            <div class="stat-number">58</div>
+                            <div class="stat-label">Cawangan Nationwide<br>Mass Market Focus</div>
+                        </div>
+                        <div class="stat-card" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%); margin: 0;">
+                            <div class="stat-number">3.9M</div>
+                            <div class="stat-label">Monthly Customers<br>High Footfall</div>
+                        </div>
+                        <div class="stat-card" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%); margin: 0;">
+                            <div class="stat-number">RM450M</div>
+                            <div class="stat-label">Target Revenue<br>Potential (Mydin)</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="partner-card">
+                    <div class="partner-name">🏪 BILLION NETWORK POWER</div>
+                    <div class="stats-grid-3" style="margin: 15px 0;">
+                        <div class="stat-card" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%); margin: 0;">
+                            <div class="stat-number">52</div>
+                            <div class="stat-label">Supermarket Outlets<br>Premium Positioning</div>
+                        </div>
+                        <div class="stat-card" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%); margin: 0;">
+                            <div class="stat-number">3.1M</div>
+                            <div class="stat-label">Monthly Customers<br>Higher Spending</div>
+                        </div>
+                        <div class="stat-card" style="background: linear-gradient(135deg, #0f4c75 0%, #3282b8 100%); margin: 0;">
+                            <div class="stat-number">RM400M</div>
+                            <div class="stat-label">Target Revenue<br>Potential (Billion)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="highlight-box">
+                <div class="big-number">RM15M MONTHLY SALES TARGET</div>
+                <div class="description">RM180M Annual Revenue - 110 Total Outlets (58 Mydin + 52 Billion)<br>Combined Market Reach: 7M Monthly Customers</div>
+            </div>
+            
+            <h3>💰 Revenue Breakdown Analysis</h3>
+            <div class="stats-grid-4">
+                <div class="stat-card">
                     <div class="stat-number">RM10M</div>
                     <div class="stat-label">Mydin Monthly<br>RM120M Annual<br>66.7% contribution</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">RM5M</div>
                     <div class="stat-label">Billion Monthly<br>RM60M Annual<br>33.3% contribution</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">555,555</div>
                     <div class="stat-label">Total Packs/Month<br>Combined Volume</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">5,051</div>
                     <div class="stat-label">Avg Pack/Outlet<br>Achievable Target</div>
                 </div>
             </div>
             
-            <h3>🔗 Lee's Frozen Food Strategic Supply Advantage</h3>
-            <div class="detail-box">
-                <h4>🚀 Supply Chain Excellence dengan Lee's Partnership:</h4>
+            <h3>🚀 Lee's Frozen Food Strategic Supply Advantage</h3>
+            <div class="content-box">
+                <h4>🔗 Supply Chain Excellence dengan Lee's Partnership</h4>
                 <ul>
                     <li><strong>Zero Stock-Out Guarantee:</strong> 121 kontena capacity memastikan bekalan berterusan ke 110 outlets</li>
                     <li><strong>Cost Advantage Sustainable:</strong> 30-40% penjimatan kos = harga kompetitif untuk retail</li>
@@ -1018,626 +1082,643 @@
                 </ul>
             </div>
             
-            <h3>🚀 Phased Rollout Plan - Dual Channel</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Phase 1: Pilot Launch (Month 1-2)</div>
-                <div class="timeline-desc">15 Mydin + 15 Billion strategic outlets, Target RM3M-5M monthly</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Phase 2: Scale-Up (Month 3-4)</div>
-                <div class="timeline-desc">35 Mydin + 30 Billion outlets, Target RM8M-11M monthly</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Phase 3: Full Deployment (Month 5-6)</div>
-                <div class="timeline-desc">All 58 Mydin + 52 Billion outlets, Target RM14M-15M monthly</div>
-            </div>
-            
-            <h3>🎯 Critical Success Factors</h3>
-            <div class="detail-box">
-                <h4>Implementation Excellence:</h4>
-                <ul>
-                    <li><strong>Differentiated Positioning:</strong> Mydin (mass market), Billion (premium value)</li>
-                    <li><strong>Guaranteed Supply:</strong> Lee's Frozen Food partnership eliminates stock-out risk</li>
-                    <li><strong>Competitive Pricing:</strong> 30-40% cost advantage maintained across channels</li>
-                    <li><strong>Category Management:</strong> Optimized placement dan promotion strategies</li>
-                    <li><strong>Performance Tracking:</strong> Real-time monitoring across 110 outlets</li>
-                </ul>
+            <h3>🎯 Phased Rollout Plan - Dual Channel</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 1: Pilot Launch (Month 1-2)</div>
+                    <div class="timeline-desc">15 Mydin + 15 Billion strategic outlets, Target RM3M-5M monthly</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 2: Scale-Up (Month 3-4)</div>
+                    <div class="timeline-desc">35 Mydin + 30 Billion outlets, Target RM8M-11M monthly</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Phase 3: Full Deployment (Month 5-6)</div>
+                    <div class="timeline-desc">All 58 Mydin + 52 Billion outlets, Target RM14M-15M monthly</div>
+                </div>
             </div>
             
-            <div class="highlight">
-                <div class="label">SUCCESS FOUNDATION: Lee's Frozen Food 47-year expertise + PMW 15-year distribution network + Mydin/Billion 110 outlets = Market Leadership Platform</div>
+            <div class="highlight-box">
+                <div class="description">SUCCESS FOUNDATION: Lee's Frozen Food 47-year expertise + PMW 15-year distribution network + Mydin/Billion 110 outlets = Market Leadership Platform</div>
+            </div>
         </div>
         
-        <!-- Slide 8: Strategi Media Sosial & Marketing -->
+        <!-- Slide 8: Financial Projections -->
         <div class="slide">
-            <div class="slide-number">8/13</div>
-            <h2>STRATEGI MEDIA SOSIAL & MARKETING PMW</h2>
+            <div class="slide-header">
+                <div class="slide-number">Slide 8 of 13</div>
+                <h2>PROJEKSI KEUANGAN & GROWTH MODEL</h2>
+            </div>
             
-            <h3>📱 Kekuatan Digital Marketing PMW</h3>
-            <div class="stats-grid-3">
-                <div class="stat-box">
-                    <div class="stat-number">2.8M</div>
-                    <div class="stat-label">Facebook Followers<br>High Engagement<br>Active Community</div>
+            <div class="highlight-box">
+                <div class="big-number">RM350 MILLION</div>
+                <div class="description">Target Revenue 2025 dengan Dual Retail Partnership (400% growth from RM70M baseline)</div>
+            </div>
+            
+            <h3>📈 Enhanced Revenue Model dengan Mydin & Billion</h3>
+            <div class="stats-grid-2">
+                <div class="stat-card">
+                    <div class="stat-number">2024 Baseline</div>
+                    <div class="stat-label">RM70M Revenue<br>35.8 Kontena<br>11 outlets only</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">1.5M</div>
-                    <div class="stat-label">TikTok Followers<br>Viral Content<br>Gen Z Reach</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">950K</div>
-                    <div class="stat-label">Instagram Followers<br>Visual Marketing<br>Premium Audience</div>
+                <div class="stat-card">
+                    <div class="stat-number">2025 Target</div>
+                    <div class="stat-label">RM350M Revenue<br>121 Kontena<br>121 total outlets</div>
                 </div>
             </div>
             
-            <h3>🌟 Content Creator Powerhouse</h3>
-            <div class="detail-box">
-                <h4>🎭 Talent PMW yang Viral:</h4>
-                <ul>
-                    <li><strong>Una (TikTok Queen):</strong> 12.5M followers, specialist dalam food review dan comedy content</li>
-                    <li><strong>Eca (Instagram Star):</strong> 8.2M followers, lifestyle dan cooking content creator</li>
-                    <li><strong>Content Performance:</strong> Average 2-5M views per video, 85% engagement rate</li>
-                    <li><strong>Viral Strategy:</strong> Daily trending content, real-time response marketing</li>
-                    <li><strong>Community Building:</strong> Strong fanbase loyalty, high conversion rate</li>
-                </ul>
-            </div>
-            
-            <h3>🎬 Celebrity Collaborations Portfolio</h3>
-            <div class="detail-box">
-                <h4>🌟 Artis Malaysia & International:</h4>
-                <ul>
-                    <li><strong>Local Celebrities:</strong> Siti Nurhaliza, Datuk Aliff Syukri, Fatin Afeefa</li>
-                    <li><strong>Comedy Stars:</strong> Zizan Razak, Bell Ngasri, Tauke Jambu</li>
-                    <li><strong>International Reach:</strong> Indonesian food bloggers, Thai cooking channels</li>
-                    <li><strong>Influencer Network:</strong> 200+ micro dan macro influencers aktif</li>
-                    <li><strong>Celebrity Impact:</strong> 40% sales spike during celebrity campaigns</li>
-                </ul>
-            </div>
-            
-            <h3>🚀 Marketing Excellence Metrics</h3>
+            <h3>💰 Revenue Breakdown 2025 Projection</h3>
             <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">5.3M</div>
-                    <div class="stat-label">Total Social Reach<br>Cross-platform<br>Monthly active</div>
+                <div class="stat-card">
+                    <div class="stat-number">RM180M</div>
+                    <div class="stat-label">Mydin + Billion<br>51.4% total revenue<br>110 outlets</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">25M</div>
-                    <div class="stat-label">Monthly Views<br>Video Content<br>Viral Performance</div>
+                <div class="stat-card">
+                    <div class="stat-number">RM120M</div>
+                    <div class="stat-label">Enhanced Reseller<br>34.3% total revenue<br>Lee's advantage</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">12%</div>
-                    <div class="stat-label">Conversion Rate<br>Social to Sales<br>Industry Leading</div>
+                <div class="stat-card">
+                    <div class="stat-number">RM30M</div>
+                    <div class="stat-label">Restaurant PMW<br>8.6% total revenue<br>Stable foundation</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Content Schedule<br>Real-time Updates<br>Trending Response</div>
+                <div class="stat-card">
+                    <div class="stat-number">RM20M</div>
+                    <div class="stat-label">New Channels<br>5.7% total revenue<br>Growth opportunities</div>
                 </div>
             </div>
             
-            <h3>🎯 Integrated Marketing Strategy untuk Retail Partnership</h3>
-            <div class="detail-box">
-                <h4>📢 Marketing Berterusan untuk Mydin & Billion:</h4>
+            <h3>📊 3-Year Growth Trajectory</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Year 1 (2025): RM350M Revenue</div>
+                    <div class="timeline-desc">Lee's partnership + Mydin/Billion dual retail launch, social media integration, 400% growth</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Year 2 (2026): RM490M Revenue</div>
+                    <div class="timeline-desc">Full optimization, additional retail partnerships expansion, 40% growth</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Year 3 (2027): RM686M Revenue</div>
+                    <div class="timeline-desc">Market leadership achieved, 25% market share target, sustained growth</div>
+                </div>
+            </div>
+            
+            <h3>💵 Cost Savings & Profitability</h3>
+            <div class="stats-grid-4">
+                <div class="stat-card">
+                    <div class="stat-number">RM12M</div>
+                    <div class="stat-label">Annual Import<br>Savings vs Local<br>3,011 ton scale</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">RM8M</div>
+                    <div class="stat-label">Marketing Savings<br>vs Traditional<br>Social media ROI</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">27%</div>
+                    <div class="stat-label">Gross Margin<br>Industry Leading<br>Lee's advantage</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">RM70M</div>
+                    <div class="stat-label">Net Profit<br>20% margin<br>Year 1 target</div>
+                </div>
+            </div>
+            
+            <div class="content-box">
+                <h4>🎯 Investment Requirements & Returns</h4>
                 <ul>
-                    <li><strong>Store-Specific Content:</strong> Daily posts featuring produk PMW di specific outlets</li>
-                    <li><strong>Live Shopping Events:</strong> Weekly live sessions dari Mydin & Billion outlets</li>
-                    <li><strong>Location-Based Campaigns:</strong> Geo-targeted ads untuk drive traffic ke outlets</li>
-                    <li><strong>Customer Testimonials:</strong> Real customer reviews dari retail locations</li>
-                    <li><strong>Promo Integration:</strong> Social media exclusive offers untuk retail customers</li>
+                    <li><strong>Total Investment Needed:</strong> RM25M (inventory, infrastructure, technology, retail setup)</li>
+                    <li><strong>ROI Payback Period:</strong> 12 months (enhanced by dual retail channel boost)</li>
+                    <li><strong>Break-even Point:</strong> Month 6 operations (faster due to retail partnerships)</li>
+                    <li><strong>Annual Profit Target:</strong> RM70M+ by Year 1 (20% net margin with scale)</li>
                 </ul>
-            </div>
-            
-            <h3>📈 Campaign Activation Plan</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Phase 1: Launch Campaign</div>
-                <div class="timeline-desc">Grand Opening content series, celebrity endorsements, viral challenges</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Phase 2: Sustained Engagement</div>
-                <div class="timeline-desc">Daily outlet features, cooking tutorials, customer stories</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Phase 3: Performance Optimization</div>
-                <div class="timeline-desc">Data-driven content, A/B testing, conversion optimization</div>
-            </div>
-            
-            <h3>🏆 Competitive Marketing Advantage</h3>
-            <div class="detail-box">
-                <h4>🎪 Digital Dominance vs Competitors:</h4>
-                <ul>
-                    <li><strong>Social Media Leader:</strong> 5.3M followers vs competitors' 200K-500K</li>
-                    <li><strong>Viral Content Machine:</strong> Daily trending vs competitors' weekly posts</li>
-                    <li><strong>Celebrity Network:</strong> A-list collaborations vs competitors' micro-influencers</li>
-                    <li><strong>Real-Time Marketing:</strong> 24/7 response vs competitors' scheduled posting</li>
-                    <li><strong>Community Building:</strong> High loyalty fanbase vs transactional following</li>
-                </ul>
-            </div>
-            
-            <div class="highlight">
-                <div class="big-number">DIGITAL MARKETING POWERHOUSE</div>
-                <div class="label">5.3M followers + Una/Eca viral content + Celebrity collaborations = Unmatched promotional power untuk drive sales ke 110 retail outlets</div>
             </div>
         </div>
         
-        <!-- Slide 9: Digital Transformation ADAT -->
+        <!-- Slide 9: ADAT Digital System -->
         <div class="slide">
-            <div class="slide-number">9/13</div>
-            <h2>TRANSFORMASI DIGITAL SISTEM ADAT</h2>
+            <div class="slide-header">
+                <div class="slide-number">Slide 9 of 13</div>
+                <h2>TRANSFORMASI DIGITAL - SISTEM ADAT</h2>
+            </div>
             
-            <h3>🤖 ADAT - Order & Delivery Management</h3>
-            <div class="highlight">
-                <div class="big-number">Advanced Digital Automation Technology</div>
-                <div class="label">Revolutionary system untuk transform traditional operations kepada smart automation</div>
+            <div class="highlight-box">
+                <div class="big-number">ADAT SYSTEM</div>
+                <div class="description">Advanced Digital Automation Technology - Order & Delivery Management Revolution</div>
             </div>
             
             <div class="stats-grid-3">
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">🚀</div>
-                    <div class="stat-label">Smart Delivery<br>Auto-assign orders<br>berdasarkan poskod</div>
+                    <div class="stat-label">Smart Delivery<br>Auto-assign orders<br>by location & capacity</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">📱</div>
-                    <div class="stat-label">Agent Dashboard<br>Real-time tracking<br>management system</div>
+                    <div class="stat-label">Agent Dashboard<br>Real-time tracking<br>performance metrics</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">💰</div>
-                    <div class="stat-label">Auto Commission<br>Transparent payment<br>calculation system</div>
+                    <div class="stat-label">Auto Commission<br>Transparent payment<br>instant calculation</div>
                 </div>
             </div>
             
-            <h3>📱 Integrasi Social Media dengan ADAT</h3>
-            <div class="detail-box">
-                <h4>🔗 Social Commerce Integration:</h4>
+            <h3>🔗 Social Commerce Integration</h3>
+            <div class="content-box">
+                <h4>📱 Revolutionary Customer Journey</h4>
                 <ul>
-                    <li><strong>One-Click Ordering:</strong> Direct order dari Facebook/Instagram/TikTok ke ADAT system</li>
-                    <li><strong>Influencer Tracking:</strong> Real-time sales attribution untuk Una, Eca dan celebrity campaigns</li>
-                    <li><strong>Social Proof:</strong> Customer reviews dan ratings terintegrasi dalam platform</li>
+                    <li><strong>One-Click Ordering:</strong> Direct dari Facebook/Instagram/TikTok ke ADAT system</li>
+                    <li><strong>Influencer Attribution:</strong> Real-time tracking Una/Eca campaigns to sales</li>
                     <li><strong>Live Shopping Integration:</strong> Real-time inventory check during live streams</li>
-                    <li><strong>Viral Content ROI:</strong> Track conversion dari setiap viral post ke actual sales</li>
+                    <li><strong>Social Proof Engine:</strong> Customer reviews & ratings terintegrasi</li>
+                    <li><strong>Viral Content ROI:</strong> Track conversion dari every post to actual revenue</li>
                 </ul>
+            </div>
+            
+            <h3>⚡ Before vs After Transformation</h3>
+            <div class="stats-grid-2">
+                <div class="stat-card">
+                    <div class="stat-number">❌ BEFORE</div>
+                    <div class="stat-label">Manual calls to resellers<br>2-3 days delivery<br>Paper-based orders<br>No social tracking</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">✅ WITH ADAT</div>
+                    <div class="stat-label">Social click → Auto delivery<br>Same-day service<br>Digital tracking<br>Full attribution</div>
+                </div>
+            </div>
+            
+            <h3>📈 Performance Impact Projections</h3>
+            <div class="stats-grid-4">
+                <div class="stat-card">
+                    <div class="stat-number">Same Day</div>
+                    <div class="stat-label">Delivery Speed<br>vs 2-3 hari current<br>customer satisfaction</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">5-8X</div>
+                    <div class="stat-label">Sales Velocity<br>Social + Automation<br>efficiency gains</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">+60%</div>
+                    <div class="stat-label">Conversion Rate<br>Social to Sales<br>vs traditional methods</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Attribution Tracking<br>ROI Measurement<br>data-driven decisions</div>
+                </div>
             </div>
             
             <h3>⏰ Implementation Timeline</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Q4 2025 - Development Phase</div>
-                <div class="timeline-desc">System architecture, social media integration, API development, testing</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">January 2026 - Go-Live Launch</div>
-                <div class="timeline-desc">System launch, social commerce features, initial agent onboarding</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Q1 2026 - Full Integration</div>
-                <div class="timeline-desc">2,000+ agents + 5.3M social followers + 110 retail outlets integrated</div>
-            </div>
-            
-            <h3>🔄 Customer Journey Revolution</h3>
-            <div class="detail-box">
-                <h4>❌ BEFORE - Manual Process:</h4>
-                <ul>
-                    <li>Customer call individual reseller</li>
-                    <li>Manual stock check via phone</li>
-                    <li>Paper-based order processing</li>
-                    <li>2-3 days delivery time</li>
-                </ul>
-            </div>
-            
-            <div class="detail-box">
-                <h4>✅ WITH ADAT + SOCIAL INTEGRATION:</h4>
-                <ul>
-                    <li>See viral video → Click to order → Auto delivery assignment</li>
-                    <li>Real-time stock check across 110 retail outlets + 2,000 resellers</li>
-                    <li>Social proof dan reviews terintegrasi</li>
-                    <li>Same-day delivery dengan social media tracking</li>
-                </ul>
-            </div>
-            
-            <h3>📊 Performance Benefits</h3>
-            <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">Same Day</div>
-                    <div class="stat-label">Delivery Speed<br>vs 2-3 hari current</div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Q4 2025 - Development Phase</div>
+                    <div class="timeline-desc">System architecture, social media integration, API development, testing with Lee's supply chain</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">5-8X</div>
-                    <div class="stat-label">Sales Velocity<br>Social + Automation</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q1 2026 - Beta Launch</div>
+                    <div class="timeline-desc">Pilot with top 100 resellers, social commerce features, initial optimization</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">+60%</div>
-                    <div class="stat-label">Conversion Rate<br>Social to Sales</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">100%</div>
-                    <div class="stat-label">Attribution Tracking<br>ROI Measurement</div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Q2 2026 - Full Integration</div>
+                    <div class="timeline-desc">2,000+ agents + 5.3M followers + Lee's supply chain fully integrated</div>
                 </div>
             </div>
             
-            <div class="highlight">
-                <div class="big-number">FIRST MOVER ADVANTAGE</div>
-                <div class="label">PMW will pioneer social commerce + automation integration dalam Malaysia frozen food industry</div>
+            <div class="highlight-box">
+                <div class="description">FIRST MOVER ADVANTAGE: PMW akan jadi pioneer social commerce + automation integration dalam Malaysia frozen food industry</div>
             </div>
         </div>
         
-        <!-- Slide 10: Kelebihan Kompetitif PMW -->
+        <!-- Slide 10: Implementation Roadmap -->
         <div class="slide">
-            <div class="slide-number">10/13</div>
-            <h2>KELEBIHAN KOMPETITIF PAK MAT WESTERN</h2>
-            
-            <h3>🎯 Network Established & Infrastructure</h3>
-            <div class="detail-box">
-                <ul>
-                    <li><strong>2,000+ Reseller Aktif:</strong> Network nationwide dengan 92% retention rate</li>
-                    <li><strong>15 Tahun Experience:</strong> Deep industry knowledge dan market understanding</li>
-                    <li><strong>Complete Infrastructure:</strong> 10 cold trucks + 3 warehouses (500 tan capacity)</li>
-                    <li><strong>Proven Track Record:</strong> RM40M annual revenue dengan consistent 15% growth</li>
-                    <li><strong>Quality Systems:</strong> ISO standards compliance dengan food safety protocols</li>
-                </ul>
+            <div class="slide-header">
+                <div class="slide-number">Slide 10 of 13</div>
+                <h2>ROADMAP PELAKSANAAN PARTNERSHIP</h2>
             </div>
             
-            <h3>💪 Competitive Analysis vs Major Players</h3>
-            <table class="competitive-table">
-                <tr>
-                    <th>Factor</th>
-                    <th>PMW</th>
-                    <th>QL Foods</th>
-                    <th>Ayamas</th>
-                    <th>Farm's Best</th>
-                </tr>
-                <tr>
-                    <td>Cost Structure</td>
-                    <td style="background: rgba(76,175,80,0.3);">30-40% SAVINGS</td>
-                    <td style="background: rgba(255,87,34,0.3);">High Overhead</td>
-                    <td style="background: rgba(255,87,34,0.3);">Premium Pricing</td>
-                    <td style="background: rgba(255,152,0,0.3);">Moderate Cost</td>
-                </tr>
-                <tr>
-                    <td>Social Media</td>
-                    <td style="background: rgba(76,175,80,0.3);">5.3M FOLLOWERS</td>
-                    <td style="background: rgba(255,87,34,0.3);">200K Limited</td>
-                    <td style="background: rgba(255,87,34,0.3);">150K Basic</td>
-                    <td style="background: rgba(255,87,34,0.3);">50K Minimal</td>
-                </tr>
-                <tr>
-                    <td>Digital Strategy</td>
-                    <td style="background: rgba(76,175,80,0.3);">ADAT + SOCIAL</td>
-                    <td style="background: rgba(255,87,34,0.3);">Limited Tech</td>
-                    <td style="background: rgba(255,87,34,0.3);">Basic Systems</td>
-                    <td style="background: rgba(255,87,34,0.3);">Traditional</td>
-                </tr>
-                <tr>
-                    <td>Celebrity Power</td>
-                    <td style="background: rgba(76,175,80,0.3);">UNA, ECA + A-LIST</td>
-                    <td style="background: rgba(255,87,34,0.3);">None</td>
-                    <td style="background: rgba(255,87,34,0.3);">Limited</td>
-                    <td style="background: rgba(255,87,34,0.3);">None</td>
-                </tr>
-                <tr>
-                    <td>Distribution</td>
-                    <td style="background: rgba(76,175,80,0.3);">2,000+ NETWORK</td>
-                    <td style="background: rgba(255,152,0,0.3);">Corporate Focus</td>
-                    <td style="background: rgba(255,152,0,0.3);">Selective</td>
-                    <td style="background: rgba(255,152,0,0.3);">CAB Network</td>
-                </tr>
-            </table>
-            
-            <h3>🛡️ Sustainable Competitive Moats</h3>
-            <div class="detail-box">
-                <h4>Defensive Advantages:</h4>
-                <ul>
-                    <li><strong>Digital Marketing Dominance:</strong> 5.3M followers vs competitors' 50K-200K</li>
-                    <li><strong>Viral Content Machine:</strong> Una & Eca content creators dengan massive reach</li>
-                    <li><strong>Celebrity Network:</strong> A-list collaborations yang competitors tidak ada</li>
-                    <li><strong>Cost Structure Advantage:</strong> 30-40% import savings sustainable</li>
-                    <li><strong>Distribution Density:</strong> 2,000+ reseller + 110 retail outlets</li>
-                    <li><strong>Social Commerce Pioneer:</strong> First mover dalam integrated social selling</li>
-                </ul>
+            <div class="highlight-box">
+                <div class="big-number">STRUCTURED EXECUTION</div>
+                <div class="description">4-Phase Strategic Implementation Plan untuk Market Leadership</div>
             </div>
             
-            <h3>📈 Strategic Positioning</h3>
-            <div class="highlight">
-                <div class="big-number">MARKET DISRUPTOR</div>
-                <div class="label">Perfect combination: Cost leadership + Social media dominance + Distribution excellence + Digital innovation</div>
+            <h3>🚀 Phase 1: Foundation Setup (Q1 2025)</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Partnership Agreement Finalization</div>
+                    <div class="timeline-desc">Legal framework, governance structure, success metrics, profit sharing model</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Lee's Supply Chain Integration</div>
+                    <div class="timeline-desc">Container scheduling, quality protocols, logistics coordination, inventory management</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Infrastructure Scaling Preparation</div>
+                    <div class="timeline-desc">Cold storage expansion, delivery fleet enhancement, team hiring & training</div>
+                </div>
             </div>
             
+            <h3>📈 Phase 2: Market Entry (Q2 2025)</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Enhanced Product Portfolio Launch</div>
+                    <div class="timeline-desc">Lee's import products integration, competitive pricing, premium quality positioning</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Social Media Campaign Activation</div>
+                    <div class="timeline-desc">Una & Eca content series, celebrity collaborations, viral product launches</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Existing Network Optimization</div>
+                    <div class="timeline-desc">2,000+ resellers upgrade, training programs, performance incentives</div>
+                </div>
+            </div>
+            
+            <h3>🎯 Phase 3: Scale & Expansion (Q3-Q4 2025)</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Retail Channel Development</div>
+                    <div class="timeline-desc">Modern trade partnerships, supermarket negotiations, premium outlet placement</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Geographic Expansion</div>
+                    <div class="timeline-desc">Northern & East Coast penetration, Sabah Sarawak market entry preparation</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Digital System Development</div>
+                    <div class="timeline-desc">ADAT system beta version, social commerce integration, automation features</div>
+                </div>
+            </div>
+            
+            <h3>🏆 Phase 4: Market Leadership (Q1-Q2 2026)</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Full System Integration</div>
+                    <div class="timeline-desc">ADAT go-live, complete automation, social commerce optimization</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Market Dominance Strategy</div>
+                    <div class="timeline-desc">25% market share target, category leadership, competitor response management</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Innovation & Future Growth</div>
+                    <div class="timeline-desc">New product development, international expansion planning, technology advancement</div>
+                </div>
+            </div>
+            
+            <h3>📊 Success Milestones & KPIs</h3>
             <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">SOCIAL</div>
-                    <div class="stat-label">5.3M followers<br>viral content daily</div>
+                <div class="stat-card">
+                    <div class="stat-number">Q2 2025</div>
+                    <div class="stat-label">RM15M Monthly<br>Revenue Target<br>Market entry success</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">COST</div>
-                    <div class="stat-label">30-40% savings<br>import advantage</div>
+                <div class="stat-card">
+                    <div class="stat-number">Q4 2025</div>
+                    <div class="stat-label">RM17M Monthly<br>Scale optimization<br>Network expansion</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">NETWORK</div>
-                    <div class="stat-label">2,110 touchpoints<br>nationwide reach</div>
+                <div class="stat-card">
+                    <div class="stat-number">Q2 2026</div>
+                    <div class="stat-label">RM20M Monthly<br>System integration<br>Full automation</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">TECH</div>
-                    <div class="stat-label">ADAT + Social<br>innovation leader</div>
+                <div class="stat-card">
+                    <div class="stat-number">Q4 2026</div>
+                    <div class="stat-label">RM25M Monthly<br>Market leadership<br>25% share achieved</div>
                 </div>
             </div>
         </div>
         
-        <!-- Slide 11: Projeksi & Financial Model -->
+        <!-- Slide 11: Risk Management -->
         <div class="slide">
-            <div class="slide-number">11/13</div>
-            <h2>PROJEKSI KEUANGAN & MODEL BISNIS</h2>
+            <div class="slide-header">
+                <div class="slide-number">Slide 11 of 13</div>
+                <h2>RISK MANAGEMENT & MITIGATION</h2>
+            </div>
             
-            <h3>📊 Current vs Future Operations</h3>
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-number">2024 Baseline</div>
-                    <div class="stat-label">RM70M Revenue<br>35.8 Kontena<br>895 Tan Total</div>
+            <div class="highlight-box">
+                <div class="big-number">PROACTIVE RISK MANAGEMENT</div>
+                <div class="description">Comprehensive Strategy untuk Minimize Risks & Maximize Success Probability</div>
+            </div>
+            
+            <h3>⚠️ Key Risk Factors & Mitigation Strategies</h3>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Risk Category</th>
+                            <th>Potential Impact</th>
+                            <th>Probability</th>
+                            <th>Mitigation Strategy</th>
+                            <th>Contingency Plan</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Supply Chain</strong></td>
+                            <td>High</td>
+                            <td>Low</td>
+                            <td>Lee's 47-year expertise + 8-country sourcing</td>
+                            <td>Alternative supplier network</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Currency Fluctuation</strong></td>
+                            <td>Medium</td>
+                            <td>Medium</td>
+                            <td>Hedging strategies + volume purchasing</td>
+                            <td>Flexible pricing model</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Market Competition</strong></td>
+                            <td>Medium</td>
+                            <td>High</td>
+                            <td>30-40% cost advantage + digital supremacy</td>
+                            <td>Continuous innovation</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Regulatory Changes</strong></td>
+                            <td>Low</td>
+                            <td>Low</td>
+                            <td>Compliance expertise + halal certification</td>
+                            <td>Legal advisory support</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Technology Failure</strong></td>
+                            <td>Medium</td>
+                            <td>Low</td>
+                            <td>Phased implementation + backup systems</td>
+                            <td>Manual operation fallback</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>🛡️ Competitive Response Management</h3>
+            <div class="content-box">
+                <h4>🎯 Anticipating Competitor Reactions</h4>
+                <ul>
+                    <li><strong>Price Wars:</strong> Our 30-40% cost advantage provides significant buffer vs competitor pricing</li>
+                    <li><strong>Digital Marketing Arms Race:</strong> 5.3M follower head start + established influencer network</li>
+                    <li><strong>Supply Chain Disruption Attempts:</strong> Lee's direct import relationships = less vulnerable</li>
+                    <li><strong>Retail Channel Competition:</strong> Early mover advantage + superior value proposition</li>
+                    <li><strong>Innovation Copying:</strong> Continuous development + first mover benefits protect market position</li>
+                </ul>
+            </div>
+            
+            <h3>📊 Financial Risk Controls</h3>
+            <div class="stats-grid-4">
+                <div class="stat-card">
+                    <div class="stat-number">Diversified</div>
+                    <div class="stat-label">Revenue Streams<br>Restaurant + Reseller<br>+ Retail channels</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">2025 Target</div>
-                    <div class="stat-label">RM200M Revenue<br>121 Kontena<br>3,011 Tan Total</div>
+                <div class="stat-card">
+                    <div class="stat-number">Conservative</div>
+                    <div class="stat-label">Cash Flow<br>Management<br>3-month buffer</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Flexible</div>
+                    <div class="stat-label">Cost Structure<br>Variable scaling<br>based on demand</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">Insurance</div>
+                    <div class="stat-label">Coverage<br>Comprehensive<br>protection plan</div>
                 </div>
             </div>
             
-            <h3>💰 Revenue Breakdown 2025 Target</h3>
+            <h3>🚀 Success Probability Factors</h3>
+            <div class="content-box">
+                <h4>✅ Why This Partnership Will Succeed</h4>
+                <ul>
+                    <li><strong>Proven Track Records:</strong> PMW (15 years) + Lee's (47 years) = 62 years combined experience</li>
+                    <li><strong>Strong Financial Foundation:</strong> RM70M baseline revenue provides stable launch platform</li>
+                    <li><strong>Unique Market Position:</strong> No competitor has PMW's digital reach + Lee's cost advantage</li>
+                    <li><strong>Market Timing:</strong> 40% open market + growing demand for quality affordable products</li>
+                    <li><strong>Established Infrastructure:</strong> 2,000+ resellers + 11 outlets ready untuk immediate scale</li>
+                </ul>
+            </div>
+            
+            <div class="highlight-box">
+                <div class="description">SUCCESS PROBABILITY: 85%+ berdasarkan proven foundations, unique advantages, dan comprehensive risk management strategy</div>
+            </div>
+        </div>
+        
+        <!-- Slide 12: Partnership Benefits -->
+        <div class="slide">
+            <div class="slide-header">
+                <div class="slide-number">Slide 12 of 13</div>
+                <h2>MUTUAL BENEFITS & WIN-WIN VALUE</h2>
+            </div>
+            
+            <div class="highlight-box">
+                <div class="big-number">STRATEGIC WIN-WIN</div>
+                <div class="description">Comprehensive Value Creation untuk Both Partners & Market</div>
+            </div>
+            
+            <h3>🏆 Benefits untuk PMW</h3>
+            <div class="content-box">
+                <h4>📈 Growth & Expansion Advantages</h4>
+                <ul>
+                    <li><strong>Cost Leadership:</strong> 30-40% import savings = unbeatable market pricing</li>
+                    <li><strong>Supply Security:</strong> 121 kontena capacity ensures 365-day availability</li>
+                    <li><strong>Quality Enhancement:</strong> International grade products elevate brand positioning</li>
+                    <li><strong>Revenue Scale:</strong> RM70M → RM200M+ potential dalam 18 months</li>
+                    <li><strong>Market Leadership:</strong> Transform dari regional player kepada national leader</li>
+                    <li><strong>Profit Maximization:</strong> Higher margins through direct import cost savings</li>
+                </ul>
+            </div>
+            
+            <h3>🤝 Benefits untuk Lee's Frozen Food</h3>
+            <div class="content-box">
+                <h4>🚀 Market Access & Volume Growth</h4>
+                <ul>
+                    <li><strong>Instant Market Access:</strong> 2,000+ established reseller network nationwide</li>
+                    <li><strong>Volume Scaling:</strong> From 35.8 to 121 kontena utilization = 238% growth</li>
+                    <li><strong>Digital Marketing Power:</strong> 5.3M social media reach untuk product promotion</li>
+                    <li><strong>Brand Visibility:</strong> Celebrity endorsements & viral content exposure</li>
+                    <li><strong>Revenue Diversification:</strong> Reduce dependency on traditional wholesale channels</li>
+                    <li><strong>Market Intelligence:</strong> Direct consumer feedback & demand patterns</li>
+                </ul>
+            </div>
+            
+            <h3>🌟 Market & Consumer Benefits</h3>
             <div class="stats-grid-3">
-                <div class="stat-box">
-                    <div class="stat-number">RM120M</div>
-                    <div class="stat-label">Retail Channels<br>60% total revenue<br>Mydin + Billion</div>
+                <div class="stat-card">
+                    <div class="stat-number">Better Value</div>
+                    <div class="stat-label">30-40% savings<br>passed to consumers<br>affordability advantage</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM50M</div>
-                    <div class="stat-label">Existing Reseller<br>25% total revenue<br>2,000+ network</div>
+                <div class="stat-card">
+                    <div class="stat-number">Higher Quality</div>
+                    <div class="stat-label">International grade<br>products available<br>at competitive prices</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">RM30M</div>
-                    <div class="stat-label">Restaurant PMW<br>15% total revenue<br>anchor customer</div>
+                <div class="stat-card">
+                    <div class="stat-number">Wider Access</div>
+                    <div class="stat-label">Nationwide coverage<br>improved availability<br>convenience enhanced</div>
                 </div>
             </div>
             
-            <h3>📱 Social Media ROI Impact</h3>
-            <div class="detail-box">
-                <h4>🚀 Marketing Efficiency vs Traditional Advertising:</h4>
+            <h3>💰 Financial Projections - Mutual Value</h3>
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Metric</th>
+                            <th>PMW Benefit</th>
+                            <th>Lee's Benefit</th>
+                            <th>Combined Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Revenue Growth</strong></td>
+                            <td>RM70M → RM200M</td>
+                            <td>35.8 → 121 kontena</td>
+                            <td>238% volume increase</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Market Reach</strong></td>
+                            <td>11 → 50+ outlets</td>
+                            <td>Limited → Nationwide</td>
+                            <td>5x market penetration</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cost Efficiency</strong></td>
+                            <td>RM12M annual savings</td>
+                            <td>Volume economies</td>
+                            <td>Mutual profitability</td>
+                        </tr>
+                        <tr class="top-performer">
+                            <td><strong>Profit Target</strong></td>
+                            <td><strong>RM40M+ annually</strong></td>
+                            <td><strong>RM15M+ annually</strong></td>
+                            <td><strong>RM55M+ combined</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <h3>🎯 Strategic Synergies</h3>
+            <div class="content-box">
+                <h4>🔗 Perfect Complementary Strengths</h4>
                 <ul>
-                    <li><strong>Cost Per Reach:</strong> RM0.02 (social) vs RM0.50 (TV ads) = 2,500% more efficient</li>
-                    <li><strong>Conversion Rate:</strong> 12% (social commerce) vs 2% (traditional ads)</li>
-                    <li><strong>Customer Acquisition Cost:</strong> RM15 vs RM85 traditional marketing</li>
-                    <li><strong>Viral Multiplier Effect:</strong> 1 celebrity post = RM200K equivalent TV ad value</li>
-                    <li><strong>Annual Marketing Savings:</strong> RM8M vs traditional advertising budget</li>
+                    <li><strong>PMW Distribution + Lee's Supply:</strong> End-to-end value chain control</li>
+                    <li><strong>Digital Marketing + Quality Products:</strong> Brand building & customer loyalty</li>
+                    <li><strong>Local Network + Global Sourcing:</strong> Best of both worlds advantage</li>
+                    <li><strong>Established Base + Expansion Capability:</strong> Rapid scale potential</li>
+                    <li><strong>Innovation Culture + Traditional Excellence:</strong> Modern meets proven experience</li>
                 </ul>
             </div>
             
-            <h3>📈 Growth Trajectory 3-Year Plan</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Year 1 (2025): RM200M</div>
-                <div class="timeline-desc">Social media driven retail expansion, ADAT + social integration, 186% growth</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Year 2 (2026): RM280M</div>
-                <div class="timeline-desc">Viral campaigns drive additional retailers, international collaborations, 40% growth</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Year 3 (2027): RM350M</div>
-                <div class="timeline-desc">Market leadership through social dominance, 30% market share achieved</div>
-            </div>
-            
-            <h3>💵 Cost Savings Analysis</h3>
-            <div class="detail-box">
-                <h4>Annual Savings vs Traditional Operations:</h4>
-                <ul>
-                    <li><strong>Direct Import Advantage:</strong> RM12M annual savings at full scale</li>
-                    <li><strong>Social Media Marketing:</strong> RM8M savings vs traditional advertising</li>
-                    <li><strong>Volume Economics:</strong> Additional RM3M savings from scale</li>
-                    <li><strong>ADAT Automation:</strong> RM2M operational efficiency savings</li>
-                    <li><strong>Total Annual Savings:</strong> RM25M reinvested untuk growth</li>
-                </ul>
-            </div>
-            
-            <h3>🎯 Profitability Model</h3>
-            <div class="stats-grid-4">
-                <div class="stat-box">
-                    <div class="stat-number">27%</div>
-                    <div class="stat-label">Gross Margin<br>Industry leading<br>efficiency gains</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">20%</div>
-                    <div class="stat-label">Net Margin<br>RM40M profit<br>Year 1 target</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">15 months</div>
-                    <div class="stat-label">ROI Payback<br>Faster recovery<br>via social boost</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-number">45%</div>
-                    <div class="stat-label">YoY Growth<br>Social-driven<br>sustainable rate</div>
-                </div>
-            </div>
-            
-            <div class="highlight">
-                <div class="big-number">FINANCIAL EXCELLENCE</div>
-                <div class="label">Enhanced profitability dengan social media advantage + cost leadership + automation efficiency</div>
+            <div class="highlight-box">
+                <div class="description">ECOSYSTEM VALUE CREATION: Partnership creates value yang lebih besar dari sum of individual parts - true synergistic growth</div>
             </div>
         </div>
         
-        <!-- Slide 11: Implementation Roadmap -->
+        <!-- Slide 13: Call to Action -->
         <div class="slide">
-            <div class="slide-number">12/13</div>
-            <h2>ROADMAP PELAKSANAAN</h2>
-            
-            <h3>🚀 Phase 1: Foundation (Q4 2024 - Q1 2025)</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Partnership Agreement</div>
-                <div class="timeline-desc">Legal framework finalization, governance structure, success metrics definition</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Infrastructure Preparation</div>
-                <div class="timeline-desc">Supply chain scaling, cold storage expansion, team hiring</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">ADAT Development Start</div>
-                <div class="timeline-desc">System architecture design, database setup, API development</div>
+            <div class="slide-header">
+                <div class="slide-number">Slide 13 of 13</div>
+                <h2>CALL TO ACTION & NEXT STEPS</h2>
             </div>
             
-            <h3>📈 Phase 2: Pilot Launch (Q2 2025)</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">25 Strategic Mydin Outlets</div>
-                <div class="timeline-desc">Central & Southern regions focus, performance testing, market feedback</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Target: RM2.5M-4M Monthly</div>
-                <div class="timeline-desc">Proof of concept validation, optimization opportunities identification</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Staff Training & Merchandising</div>
-                <div class="timeline-desc">Comprehensive training programs, display optimization</div>
+            <div class="highlight-box">
+                <div class="big-number">SEIZE THE MOMENT</div>
+                <div class="description">Perfect Storm Opportunity untuk Transform Malaysia Frozen Food Industry</div>
             </div>
             
-            <h3>🎯 Phase 3: Scale-Up (Q3-Q4 2025)</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">45 Outlets Total</div>
-                <div class="timeline-desc">Add Northern & East Coast regions, Target RM6M-7.5M monthly</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Performance Optimization</div>
-                <div class="timeline-desc">Data analysis, process refinement, efficiency improvements</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">ADAT Beta Testing</div>
-                <div class="timeline-desc">System testing with selected agents, bug fixes</div>
-            </div>
-            
-            <h3>🏆 Phase 4: Full Deployment (Q1 2026)</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">All 93 Outlets Active</div>
-                <div class="timeline-desc">Mydin (58) + Billion (52) nationwide coverage, Target RM14M-15M monthly</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">ADAT System Go-Live</div>
-                <div class="timeline-desc">Full automation launch, 2,000+ agents integration</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Market Leadership</div>
-                <div class="timeline-desc">Category dominance dalam Mydin network established</div>
-            </div>
-            
-            <h3>📊 Success Milestones</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Q2 2025</div>
-                <div class="stat-label">RM5M Monthly<br>Pilot success<br>validation</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Q4 2025</div>
-                <div class="stat-label">RM11M Monthly<br>Scale-up target<br>achievement</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Q1 2026</div>
-                <div class="stat-label">RM15M Monthly<br>Full deployment<br>success</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Q4 2026</div>
-                <div class="stat-label">RM180M Annual<br>Year 1 target<br>completed</div>
-            </div>
-            
-            <div class="highlight">
-                <div class="big-number">STRUCTURED SUCCESS</div>
-                <div class="label">Systematic implementation dengan clear milestones dan measurable success criteria</div>
-            </div>
-        </div>
-        
-        <!-- Slide 12: Kesimpulan & Call to Action -->
-        <div class="slide">
-            <div class="slide-number">13/13</div>
-            <h2>KESIMPULAN & LANGKAH SETERUSNYA</h2>
-            
-            <h3>🎯 Strategic Opportunity Summary</h3>
-            <div class="highlight">
-                <div class="big-number">PERFECT STORM OPPORTUNITY</div>
-                <div class="label">Strong Foundation + Market Gap + Import Advantage + Retail Partnership = Market Leadership</div>
-            </div>
-            
+            <h3>🎯 Why NOW is the Perfect Time</h3>
             <div class="stats-grid-4">
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">FOUNDATION</div>
-                    <div class="stat-label">PMW proven<br>RM70M baseline<br>diversified revenue</div>
+                    <div class="stat-label">PMW proven RM70M<br>+ Lee's 47-year expertise<br>= Strong base</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">ADVANTAGE</div>
-                    <div class="stat-label">30-40% cost savings<br>through direct import<br>sustainable edge</div>
-                </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">OPPORTUNITY</div>
-                    <div class="stat-label">RM1.68B open market<br>40% share available<br>massive potential</div>
+                    <div class="stat-label">RM1.68B open market<br>40% share available<br>= Massive potential</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">PLATFORM</div>
-                    <div class="stat-label">110 retail outlets<br>7M customers<br>dual channel</div>
+                <div class="stat-card">
+                    <div class="stat-number">ADVANTAGE</div>
+                    <div class="stat-label">30-40% cost savings<br>+ 5.3M social reach<br>= Unbeatable edge</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">TIMING</div>
+                    <div class="stat-label">Market growth 12-15%<br>Digital adoption peak<br>= First mover wins</div>
                 </div>
             </div>
             
-            <h3>📈 Expected Transformation</h3>
-            <div class="detail-box">
-                <h4>From Current State to Market Leadership:</h4>
+            <h3>📋 Immediate Action Items</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">Week 1-2: Partnership Agreement</div>
+                    <div class="timeline-desc">Finalize legal framework, governance structure, success metrics, profit sharing model</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Week 3-4: Supply Chain Integration</div>
+                    <div class="timeline-desc">Lee's import schedule alignment, quality protocols, logistics coordination setup</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Month 2: Infrastructure Scaling</div>
+                    <div class="timeline-desc">Cold storage expansion, delivery fleet enhancement, team hiring & training programs</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">Month 3: Market Launch</div>
+                    <div class="timeline-desc">Product portfolio launch, social media campaign activation, reseller network optimization</div>
+                </div>
+            </div>
+            
+            <h3>🏆 Success Commitments</h3>
+            <div class="content-box">
+                <h4>📈 Mutual Success Guarantees</h4>
                 <ul>
-                    <li><strong>Revenue Growth:</strong> RM70M → RM150M (114% increase Year 1)</li>
-                    <li><strong>Market Position:</strong> Regional player → National leader</li>
-                    <li><strong>Distribution:</strong> 11 outlets → 69 outlets (58 Mydin + 11 existing)</li>
-                    <li><strong>Technology:</strong> Manual operations → Full automation with ADAT</li>
-                    <li><strong>Market Share:</strong> <5% → 30% industry leadership target</li>
+                    <li><strong>Revenue Target:</strong> RM350M annual revenue within 18 months dengan dual retail</li>
+                    <li><strong>Market Share:</strong> 20% market penetration dalam 24 months melalui 110 outlets</li>
+                    <li><strong>Profitability:</strong> RM70M+ net profit dengan cost leadership advantage</li>
+                    <li><strong>Growth Rate:</strong> 40% YoY sustained growth for 3 years</li>
+                    <li><strong>Retail Leadership:</strong> Dominant presence dalam Mydin & Billion networks</li>
                 </ul>
             </div>
             
-            <h3>✅ Key Decision Factors</h3>
-            <div class="detail-box">
-                <h4>Why This Partnership Will Succeed:</h4>
-                <ul>
-                    <li><strong>Complementary Strengths:</strong> PMW distribution expertise + Koperasi import power</li>
-                    <li><strong>Market Timing:</strong> Industry growth phase with 40% market still open</li>
-                    <li><strong>Competitive Advantage:</strong> Sustainable 30-40% cost leadership</li>
-                    <li><strong>Execution Readiness:</strong> Proven capabilities dan infrastructure in place</li>
-                    <li><strong>Digital Innovation:</strong> ADAT system provides technological edge</li>
-                </ul>
-            </div>
-            
-            <h3>🚀 Immediate Next Steps</h3>
-            <div class="timeline-item">
-                <div class="timeline-date">Week 1-2: Partnership Agreement</div>
-                <div class="timeline-desc">Finalize legal framework, governance structure, success metrics</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Week 3-4: Retail Negotiations</div>
-                <div class="timeline-desc">Secure Mydin + Billion partnership terms, outlet selection, rollout schedule</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Month 2: Infrastructure Setup</div>
-                <div class="timeline-desc">Supply chain scaling, team expansion, system preparation</div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-date">Month 3: Pilot Launch</div>
-                <div class="timeline-desc">25 strategic outlets deployment (15 Mydin + 15 Billion), performance monitoring</div>
-            </div>
-            
-            <div class="section-divider"></div>
-            
-            <div class="highlight">
-                <div class="big-number">🤝 CALL TO ACTION</div>
-                <div class="label"><strong>Strategic Partnership PMW × Lee's Frozen Food Sdn. Bhd.</strong><br><br>
-                Transform dari regional operations kepada national market leadership<br>
-                dalam Malaysia's RM4.2B frozen food industry<br><br>
-                <strong>The foundation is strong. The opportunity is massive. The timing is perfect.</strong><br><br>
-                Let's build the future of Malaysian frozen food industry together.</div>
-            </div>
-            
-            <div class="stats-grid-4">
-                <div class="stat-box">
+            <h3>🤝 Partnership Value Proposition</h3>
+            <div class="stats-grid-3">
+                <div class="stat-card">
                     <div class="stat-number">READY</div>
-                    <div class="stat-label">Strong foundation<br>proven capabilities<br>market knowledge</div>
+                    <div class="stat-label">Strong foundations<br>Proven capabilities<br>Market knowledge</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">WILLING</div>
-                    <div class="stat-label">Committed partners<br>shared vision<br>mutual success</div>
+                    <div class="stat-label">Committed partners<br>Shared vision<br>Mutual success</div>
                 </div>
-                <div class="stat-box">
+                <div class="stat-card">
                     <div class="stat-number">ABLE</div>
-                    <div class="stat-label">Financial capacity<br>operational excellence<br>execution expertise</div>
+                    <div class="stat-label">Financial capacity<br>Operational excellence<br>Execution expertise</div>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-number">WIN-WIN</div>
-                    <div class="stat-label">Strategic success<br>for all stakeholders<br>sustainable growth</div>
+            </div>
+            
+            <div class="cta-section">
+                <div class="cta-title">🚀 STRATEGIC PARTNERSHIP</div>
+                <div class="cta-subtitle">PMW × LEE'S FROZEN FOOD SDN. BHD.</div>
+                
+                <div class="content-box" style="background: rgba(255,255,255,0.1); border: none; color: white;">
+                    <h4 style="color: #ffd700;">Transform dari Regional Operations kepada National Market Leadership</h4>
+                    <p style="color: white; font-size: 18px; line-height: 1.6;">
+                        Dalam Malaysia's RM4.2 billion frozen food industry
+                        <br><br>
+                        <strong>The foundation is strong. The opportunity is massive. The timing is perfect.</strong>
+                        <br><br>
+                        Mari kita bina masa depan industri frozen food Malaysia bersama-sama.
+                    </p>
+                </div>
+                
+                <div class="stats-grid-4" style="margin-top: 30px;">
+                    <div class="stat-card" style="background: rgba(255,215,0,0.2); border: 2px solid #ffd700;">
+                        <div class="stat-number" style="color: #ffd700;">VISION</div>
+                        <div class="stat-label">Market Leadership<br>25% Share Target<br>Industry Transform</div>
+                    </div>
+                    <div class="stat-card" style="background: rgba(255,215,0,0.2); border: 2px solid #ffd700;">
+                        <div class="stat-number" style="color: #ffd700;">MISSION</div>
+                        <div class="stat-label">Quality + Affordability<br>Nationwide Access<br>Customer First</div>
+                    </div>
+                    <div class="stat-card" style="background: rgba(255,215,0,0.2); border: 2px solid #ffd700;">
+                        <div class="stat-number" style="color: #ffd700;">VALUES</div>
+                        <div class="stat-label">Innovation Excellence<br>Mutual Success<br>Sustainable Growth</div>
+                    </div>
+                    <div class="stat-card" style="background: rgba(255,215,0,0.2); border: 2px solid #ffd700;">
+                        <div class="stat-number" style="color: #ffd700;">OUTCOME</div>
+                        <div class="stat-label">Win-Win Partnership<br>Market Disruption<br>Legacy Building</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1648,10 +1729,11 @@
         <button class="nav-btn" onclick="window.scrollTo(0,0)">⬆️ Top</button>
         <button class="nav-btn" onclick="window.scrollTo(0,document.body.scrollHeight)">⬇️ End</button>
         <button class="nav-btn" onclick="toggleAutoScroll()">⏯️ Auto</button>
+        <button class="nav-btn" onclick="window.print()">🖨️ Print</button>
     </div>
     
     <script>
-        // Smooth scrolling untuk navigation
+        // Smooth scrolling navigation
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -1661,7 +1743,7 @@
             });
         });
         
-        // Simple slide indicator
+        // Slide tracking
         let slideCount = 13;
         let currentSlideVisible = 1;
         
@@ -1681,7 +1763,7 @@
         
         window.addEventListener('scroll', updateSlideIndicator);
         
-        // Auto-scroll untuk presentation mode
+        // Auto-scroll presentation mode
         let autoScroll = false;
         let autoScrollInterval;
         
@@ -1694,11 +1776,12 @@
                     if (!autoScroll || currentSlide >= slides.length) {
                         clearInterval(autoScrollInterval);
                         autoScroll = false;
+                        document.body.style.boxShadow = '';
                         return;
                     }
                     slides[currentSlide].scrollIntoView({ behavior: 'smooth' });
                     currentSlide++;
-                }, 15000); // 15 seconds per slide for presentation reading
+                }, 20000); // 20 seconds per slide
                 
                 // Visual feedback
                 document.body.style.boxShadow = 'inset 0 0 20px rgba(255,215,0,0.3)';
@@ -1750,12 +1833,12 @@
         
         document.addEventListener('touchstart', function(e) {
             touchStartY = e.changedTouches[0].screenY;
-        });
+        }, { passive: true });
         
         document.addEventListener('touchend', function(e) {
             touchEndY = e.changedTouches[0].screenY;
             handleSwipe();
-        });
+        }, { passive: true });
         
         function handleSwipe() {
             const swipeThreshold = 50;
@@ -1796,17 +1879,51 @@
         window.addEventListener('scroll', () => {
             ticking = false;
             requestTick();
-        });
+        }, { passive: true });
         
         // Print optimization
         window.addEventListener('beforeprint', function() {
             document.body.style.background = 'white';
-            document.body.style.color = 'black';
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.style.background = 'white';
+                slide.style.color = 'black';
+                slide.style.boxShadow = '0 2px 10px rgba(0,0,0,0.1)';
+            });
         });
         
         window.addEventListener('afterprint', function() {
             document.body.style.background = '';
-            document.body.style.color = '';
+            document.querySelectorAll('.slide').forEach(slide => {
+                slide.style.background = '';
+                slide.style.color = '';
+                slide.style.boxShadow = '';
+            });
+        });
+        
+        // Smooth reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Initialize animations
+        document.addEventListener('DOMContentLoaded', function() {
+            const animatedElements = document.querySelectorAll('.stat-card, .timeline-item, .content-box');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(20px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
         });
     </script>
 </body>
